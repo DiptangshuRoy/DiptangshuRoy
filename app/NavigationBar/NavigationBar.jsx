@@ -10,7 +10,7 @@ function NavigationBar() {
                     max-sm:hidden max-md:hidden">
       <Link href="/">
         <div className="flex gap-1.5 justify-center items-center self-stretch px-4 py-2 my-auto bg-zinc-800 rounded-[40px] w-[52px]">
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6d7e68a46c04f3adfe57e8a577bbc961b545f3f9c1c32ef25e43c3563f31b6ea?placeholderIfAbsent=true&apiKey=2385614b975c4d60b71bd5d3792c2e39" className="object-contain self-stretch my-auto w-5 aspect-square" alt="" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6d7e68a46c04f3adfe57e8a577bbc961b545f3f9c1c32ef25e43c3563f31b6ea?placeholderIfAbsent=true&apiKey=2385614b975c4d60b71bd5d3792c2e39" className="object-contain self-stretch my-auto w-5 aspect-square" alt="Home" />
         </div>
       </Link>
       <ul className="flex gap-10 list-none p-0 m-0">

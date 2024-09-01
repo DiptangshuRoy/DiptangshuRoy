@@ -8,7 +8,7 @@ function GradientIcon() {
         <div className="flex shrink-0 w-2 h-2 rounded-full border-2 border-black border-solid" />
         <div className="flex shrink-0 h-2 rounded-full border-2 border-black border-solid" />
       </div> */}
-      <Image className='rounded-full' src='/MyPhoto.png' height={500} width={500}></Image>
+      <Image className='rounded-full' src='/MyPhoto.png' height={500} width={500} alt=''></Image>
     </div>
   );
 }

@@ -5,7 +5,7 @@ function ClientInfo({ name, role, avatarSrc }) {
   return (
     <header className="flex gap-10 items-center">
       <div className="flex gap-3 items-start self-stretch my-auto">
-      <Image className="flex shrink-0 w-12 h-12 rounded-[50px]" src='/ClientPhotos/User4.png' height={100} width={100} aria-hidden="true" />
+      <Image className="flex shrink-0 w-12 h-12 rounded-[50px]" src='/ClientPhotos/User4.png' height={100} width={100} aria-hidden="true" alt=""/>
         <div>
           <h2 className="text-base leading-7">Samantha Green</h2>
           <p className="mt-1 text-xs">Dummy Review</p>
