@@ -32,9 +32,9 @@ const MyProcessOfWork = () => {
             <GameIconRight />
             <h1 className='text-2xl mt-8'>Step1: Planning and Design</h1>
             <ul className='opacity-80 font-light'>
-              <li>Requirement Gathering: Understand the project's requirements, including features, user interface, and user experience.</li>
+              <li>Requirement Gathering: Understand the project&apos;s requirements, including features, user interface, and user experience.</li>
               <li>Wireframing and Prototyping: Create wireframes and prototypes to visualize the layout and design of the website.</li>
-              <li>Technology Stack Planning: Decide on the specific libraries, tools, and services you'll use, such as React components, Express middleware, and MongoDB schema design.</li>
+              <li>Technology Stack Planning: Decide on the specific libraries, tools, and services you&apos;ll use, such as React components, Express middleware, and MongoDB schema design.</li>
             </ul>
             <Link href='#SomeFeaturedProjects' className="flex mt-4 w-44 h-14 justify-center items-center bg-gradient-to-r from-orange-200 to-blue-400 rounded-[290px]">
               <div className='flex font-light justify-center items-center bg-black h-[51px] w-[171px] rounded-[290px]'>
@@ -48,7 +48,7 @@ const MyProcessOfWork = () => {
             <GameIconDown />
             <h1 className='text-2xl mt-8'>Step2: Development</h1>
             <ul className='opacity-80 font-light'>
-              <li>Frontend Development (React.js): Build the user interface, ensuring it's responsive and user-friendly. Focus on components, state management, and API integration.</li>
+              <li>Frontend Development (React.js): Build the user interface, ensuring it&apos;s responsive and user-friendly. Focus on components, state management, and API integration.</li>
               <li>Backend Development (Express.js & Node.js): Develop the server-side logic, create RESTful APIs, and handle authentication, data validation, and business logic.</li>
               <li>Database Integration (MongoDB): Design the database schema, implement CRUD operations, and manage data connections.</li>
             </ul>
