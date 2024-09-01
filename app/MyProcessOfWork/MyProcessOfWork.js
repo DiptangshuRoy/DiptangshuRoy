@@ -8,56 +8,66 @@ import Link from 'next/link';
 const MyProcessOfWork = () => {
   return (
     <>
-        <div className="flex flex-wrap gap-7 items-center text-4xl leading-none text-center text-white ml-20 mt-12 mb-14
-                        max-sm:ml-5 max-md:ml-5 max-sm:text-2xl max-md:text-2xl">
-          <h1 id="MyProcessOfWork" className="self-stretch my-auto max-md:max-w-full">
-            My Process Of Work
-          </h1>
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/114e2af9913c687a0a4bf51163cb275023a08c71a2160a14c47cedc90958ec62?placeholderIfAbsent=true&apiKey=2385614b975c4d60b71bd5d3792c2e39"
-            alt=""
-            className="object-contain shrink-0 self-stretch my-auto w-9 aspect-square"
-          />
+      <div className="flex flex-wrap gap-7 items-center text-4xl leading-none text-center text-white ml-20 mt-12 mb-14
+                      max-sm:ml-5 max-md:ml-5 max-sm:text-2xl max-md:text-2xl">
+        <h1 id="MyProcessOfWork" className="self-stretch my-auto max-md:max-w-full">
+          My Process Of Work
+        </h1>
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/114e2af9913c687a0a4bf51163cb275023a08c71a2160a14c47cedc90958ec62?placeholderIfAbsent=true&apiKey=2385614b975c4d60b71bd5d3792c2e39"
+          alt=""
+          className="object-contain shrink-0 self-stretch my-auto w-9 aspect-square"
+        />
+      </div>
+
+      <section className='flex gap-10 ml-36
+                        max-sm:ml-5 max-md:ml-5'>
+        <div className='max-md:hidden'>
+          <Numbers />
         </div>
 
-        <section className='flex gap-10 ml-36
-                            max-sm:ml-5 max-md:ml-5'>
+        <div className='flex-col leading-9 mt-5'>
           <div>
-            <Numbers />
+            <GameIconRight />
+            <h1 className='text-2xl mt-8'>Step1: Planning and Design</h1>
+            <ul className='opacity-80 font-light'>
+              <li>Requirement Gathering: Understand the project's requirements, including features, user interface, and user experience.</li>
+              <li>Wireframing and Prototyping: Create wireframes and prototypes to visualize the layout and design of the website.</li>
+              <li>Technology Stack Planning: Decide on the specific libraries, tools, and services you'll use, such as React components, Express middleware, and MongoDB schema design.</li>
+            </ul>
+            <Link href='#SomeFeaturedProjects' className="flex mt-4 w-44 h-14 justify-center items-center bg-gradient-to-r from-orange-200 to-blue-400 rounded-[290px]">
+              <div className='flex font-light justify-center items-center bg-black h-[51px] w-[171px] rounded-[290px]'>
+                See Examples
+              </div>
+            </Link>
           </div>
 
-          <div className='flex-col leading-[70px] mt-5
-                          max-sm:mt-3 max-md:mt-3'>
+          <div className='mt-[59px]
+                          max-sm:mt-20 max-md:mt-20'>
+            <GameIconDown />
+            <h1 className='text-2xl mt-8'>Step2: Development</h1>
+            <ul className='opacity-80 font-light'>
+              <li>Frontend Development (React.js): Build the user interface, ensuring it's responsive and user-friendly. Focus on components, state management, and API integration.</li>
+              <li>Backend Development (Express.js & Node.js): Develop the server-side logic, create RESTful APIs, and handle authentication, data validation, and business logic.</li>
+              <li>Database Integration (MongoDB): Design the database schema, implement CRUD operations, and manage data connections.</li>
+            </ul>
+          </div>
 
-            <div>
-              <GameIconRight />
-              <h1 className='text-2xl mt-8'>Step1: Product Design Research</h1>
-              <span className='opacity-80 font-light'>This is initial step</span>
-              <Link href='#SomeFeaturedProjects' className="flex w-44 h-14 justify-center items-center bg-gradient-to-r from-orange-200 to-blue-400 rounded-[290px]">
-                <div className='flex font-light justify-center items-center bg-black h-[53px] w-[171px] rounded-[290px]'>
-                  See Examples
-                </div>
-              </Link>
-            </div>
-
-            <div className='mt-32
-                            max-sm:mt-20 max-md:mt-20'>
-              <GameIconDown />
-              <h1 className='text-2xl mt-8'>Step2: Product Design Research</h1>
-              <span className='opacity-80 font-light'>This is initial step</span>
-            </div>
-
-            <div className='mt-24
-                            max-sm:mt-12 max-md:mt-12'>
-              <GameIconLeft />
-              <h1 className='text-2xl mt-8'>Step3: Product Design Research</h1>
-              <span className='opacity-80 font-light'>This is initial step</span>
-
-            </div>
+          <div className='mt-[53px]
+                          max-sm:mt-12 max-md:mt-12'>
+            <GameIconLeft />
+            <h1 className='text-2xl mt-8'>Step3: Testing and Deployment</h1>
+            <ul className='opacity-80 font-light'>
+              <li>Testing: Perform unit testing, integration testing, and end-to-end testing to ensure the website functions as expected. Tools like Jest, Mocha, or Postman are commonly used.</li>
+              <li>Debugging and Optimization: Identify and fix any issues or bugs, optimize performance, and ensure security best practices are followed.</li>
+              <li>Deployment: Deploy the website to a hosting service like Hostinger, Vercel, Netlify, or AWS. Set up CI/CD pipelines and monitor the website post-deployment to ensure it runs smoothly.</li>
+            </ul>
 
           </div>
-        </section>
+
+        </div>
+      </section>
     </>
   )
 }

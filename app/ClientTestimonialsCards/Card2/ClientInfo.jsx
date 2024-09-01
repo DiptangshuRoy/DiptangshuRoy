@@ -1,13 +1,14 @@
 import React from "react";
+import Image from "next/image";
 
 function ClientInfo({ name, role, avatarSrc }) {
   return (
     <header className="flex gap-10 items-center">
       <div className="flex gap-3 items-start self-stretch my-auto">
-        <div className="flex shrink-0 w-12 h-12 bg-zinc-500 rounded-[50px]" aria-hidden="true" />
+        <Image className="flex shrink-0 w-12 h-12 rounded-[50px]" src='/ClientPhotos/User1.png' height={100} width={100} aria-hidden="true" />
         <div>
-          <h2 className="text-base leading-7">{name}</h2>
-          <p className="mt-1 text-xs">{role}</p>
+          <h2 className="text-base leading-7">Emily White</h2>
+          <p className="mt-1 text-xs">Dummy Review</p>
         </div>
       </div>
       <img

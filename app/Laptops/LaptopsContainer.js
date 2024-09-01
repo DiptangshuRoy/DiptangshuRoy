@@ -10,7 +10,7 @@ const LaptopsContainer = () => {
     <>
       <section className='m-24
                           max-sm:m-0 max-md:m-0 max-sm:mt-10 max-md:mt-24 max-sm:mx-10 max-md:mx-10'>
-        <div target='_blank' className='flex justify-center items-center
+        <div className='flex justify-center items-center
                                         max-sm:block max-md:block'>
           <Link className='mr-5' href="https://my-netflix-clone-two.vercel.app/">
             <Image className='hover:scale-105 transition ' src='/Laptops/Netflix.png' height={1700} width={1700} alt='' />

@@ -1,4 +1,3 @@
-import HireSection from './HireSectionInNavbar/HireSection';
 import HomeView from './HomeView/MyComponent'
 import TechStack from './HomeViewBottomNavbar/TechStack';
 import SomeFeaturedProjects from './SomeFeaturedProjects';
@@ -39,9 +38,10 @@ export default function Home() {
                         max-sm:mt-0 max-md:mt-0'>
           <div className='flex justify-center items-center mb-7
                           max-sm:block max-md:block'>
-            <ClientTestimonialsCard1 />
             <ClientTestimonialsCard2 />
+            <ClientTestimonialsCard1 />
           </div>
+
           <div className='flex justify-center items-center
                           max-sm:block max-md:block'>
             <ClientTestimonialsCard3 />

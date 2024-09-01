@@ -3,7 +3,7 @@ import React from 'react'
 const ClientTestimonials = () => {
   return (
     <section className="flex flex-wrap gap-7 items-center text-4xl leading-none text-center text-white 
-                        max-sm:text-2xl max-md:text-2xl max-sm:mx-5 max-md:mx-5 max-sm:mt-10 max-md:mt-10">
+                        max-sm:text-2xl max-md:text-2xl max-sm:mx-5 max-md:mx-5 max-sm:mt-10 max-md:mt-10  max-sm:mb-5 max-md:mb-5">
       <h1 className="self-stretch my-auto">
         Client Testimonials
       </h1>

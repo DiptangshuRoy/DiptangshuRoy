@@ -8,11 +8,11 @@ function NavigationBar() {
   return (
     <nav className="flex gap-10 justify-center items-center py-1.5 pr-8 pl-1.5 border-indigo-400 border-solid bg-zinc-900 border-[1.5px] rounded-[290px]
                     max-sm:hidden max-md:hidden">
-      <div className="flex gap-1.5 justify-center items-center self-stretch px-4 py-2 my-auto bg-zinc-800 rounded-[40px] w-[52px]">
-        <Link href="/">
+      <Link href="/">
+        <div className="flex gap-1.5 justify-center items-center self-stretch px-4 py-2 my-auto bg-zinc-800 rounded-[40px] w-[52px]">
           <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6d7e68a46c04f3adfe57e8a577bbc961b545f3f9c1c32ef25e43c3563f31b6ea?placeholderIfAbsent=true&apiKey=2385614b975c4d60b71bd5d3792c2e39" className="object-contain self-stretch my-auto w-5 aspect-square" alt="" />
-        </Link>
-      </div>
+        </div>
+      </Link>
       <ul className="flex gap-10 list-none p-0 m-0">
         {/* {navItems.map((item, index) => (
           <NavigationItem key={index} text={item} />
