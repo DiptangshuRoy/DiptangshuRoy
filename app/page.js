@@ -14,6 +14,7 @@ import ClientTestimonialsCard4 from './ClientTestimonialsCards/Card4/ClientTesti
 import MyProcessOfWork from './MyProcessOfWork/MyProcessOfWork';
 import GoToTop from './GoToTopButton/GoToTopSection';
 import NavigationSidebarForMobile from './NavigationSidebarForMobile/NavigationSidebarForMobile';
+import LogoWithNameInFooterForMobile from './LogoWithNameInFooterForMobile'
 
 
 export default function Home() {
@@ -70,7 +71,8 @@ export default function Home() {
       </footer>
       <div className='m-5
                       md:hidden'>
-        <LogoWithName />
+        <LogoWithNameInFooterForMobile />
+        
       </div>
     </>
   );
