@@ -1,22 +1,21 @@
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 
 function Logo() {
+  let a = '</>'
   return (
     <>
       <Link href='#DiptangshuRoy'>
         <header className="flex items-center gap-3.5 text-2xl text-white whitespace-nowrap
                             max-md:gap-2.5">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/c7181cf828b5f313fb11080fbe11a068360b7c91ed2a86e5bbaba08aaae9affb?placeholderIfAbsent=true&apiKey=2385614b975c4d60b71bd5d3792c2e39"
-            className="object-contain shrink-0 my-auto aspect-[1.3] w-[39px]
-                        max-md:w-6"
-            alt="Portfolio logo"
-          />
-          <h1 id='DiptangshuRoy' className="text-2xl text-white
+          <div className="flex flex-col justify-center items-center rounded-full border-[linear-gradient(90deg,#7A87FB_0%,#FFD49C_100%)] 
+                          fill-[linear-gradient(90deg,#7A87FB_0%,#FFD49C_100%)] h-[49px] stroke-[1px] stroke-indigo-400 w-[49px]">
+            <Image className='rounded-full' src='/MyPhoto.png' height={40} width={40} alt=''></Image>
+          </div>
+          <h1 id='DiptangshuRoy' className="text-2xl text-white mt-2
                                           max-md:text-base">
-            Diptangshu Roy
+            Diptangshu Roy {a}
           </h1>
         </header>
       </Link>
