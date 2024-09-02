@@ -30,9 +30,8 @@ export default function Home() {
       <SomeFeaturedProjects />
       <div className='flex justify-center'>
 
-      <LaptopsContainer />
+        <LaptopsContainer />
       </div>
-
 
       {/* MAKE THIS RESPONSIVE */}
       <section className='mx-36 mt-12 mb-24 
@@ -60,7 +59,6 @@ export default function Home() {
         <ImageComponent />
       </div>
 
-
       {/* MAKE THIS RESPONSIVE */}
       <footer className='flex justify-around items-center mb-5
                           max-sm:flex-col-reverse max-md:flex-col-reverse max-sm:mt-10 max-md:mt-10 '>
@@ -72,10 +70,10 @@ export default function Home() {
           <GoToTop />
         </div>
       </footer>
+
       <div className='m-5
                       md:hidden'>
         <LogoWithNameInFooterForMobile />
-        
       </div>
     </>
   );
