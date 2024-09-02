@@ -22,7 +22,7 @@ const MyProcessOfWork = () => {
       </div>
 
       <section className='flex gap-10 ml-36
-                        max-sm:ml-5 max-md:ml-5'>
+                        max-md:mx-5'>
         <div className='max-md:hidden'>
           <Numbers />
         </div>
@@ -65,7 +65,6 @@ const MyProcessOfWork = () => {
               <li><b>Deployment:</b> Deploy the website to a hosting service like Hostinger, Vercel, Netlify, or AWS. Set up CI/CD pipelines and monitor the website post-deployment to ensure it runs smoothly.</li>
             </ul>
           </div>
-          
         </div>
       </section>
     </>

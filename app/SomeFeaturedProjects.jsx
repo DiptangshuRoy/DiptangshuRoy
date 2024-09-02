@@ -3,7 +3,7 @@ import React from "react";
 function SomeFeaturedProjects() {
   return (
     <section className="flex flex-wrap gap-7 items-center text-4xl leading-none text-center text-white ml-28 mt-14
-                        max-sm:ml-5 max-md:ml-5 max-sm:text-2xl max-md:text-2xl">
+                        max-md:ml-5 max-md:gap-4 max-md:text-2xl">
       <h1 id="SomeFeaturedProjects" className="self-stretch my-auto max-md:max-w-full ring-offset-8">
         Some Featured projects
       </h1>
