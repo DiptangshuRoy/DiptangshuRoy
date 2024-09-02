@@ -28,14 +28,17 @@ export default function Home() {
       <MyProcessOfWork />
 
       <SomeFeaturedProjects />
+      <div className='flex justify-center'>
+
       <LaptopsContainer />
+      </div>
 
 
       {/* MAKE THIS RESPONSIVE */}
-      <section className='mx-36 mt-36 mb-24 
+      <section className='mx-36 mt-12 mb-24 
                           max-sm:m-0 max-md:m-0'>
         <ClientTestimonials />
-        <div className='mt-10 mx-5
+        <div className='mt-14 mx-5
                         max-sm:mt-0 max-md:mt-0'>
           <div className='flex justify-center items-center mb-7
                           max-sm:block max-md:block'>
