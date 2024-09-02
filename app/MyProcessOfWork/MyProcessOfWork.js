@@ -31,11 +31,11 @@ const MyProcessOfWork = () => {
                         max-md:leading-7'>
           <div>
             <GameIconRight />
-            <h1 className='text-2xl mt-8'>Step1: Planning and Design</h1>
+            <h1 className='text-2xl mt-8 mb-2.5'>Step1: Planning and Design</h1>
             <ul className='opacity-80 font-light'>
-              <li>Requirement Gathering: Understand the project&apos;s requirements, including features, user interface, and user experience.</li>
-              <li>Wireframing and Prototyping: Create wireframes and prototypes to visualize the layout and design of the website.</li>
-              <li>Technology Stack Planning: Decide on the specific libraries, tools, and services you&apos;ll use, such as React components, Express middleware, and MongoDB schema design.</li>
+              <li><b>Requirement Gathering:</b> Understand the project&apos;s requirements, including features, user interface, and user experience.</li>
+              <li><b>Wireframing and Prototyping:</b> Create wireframes and prototypes to visualize the layout and design of the website.</li>
+              <li><b>Technology Stack Planning:</b> Decide on the specific libraries, tools, and services you&apos;ll use, such as React components, Express middleware, and MongoDB schema design.</li>
             </ul>
             <Link href='#SomeFeaturedProjects' className="flex mt-4 w-44 h-14 justify-center items-center bg-gradient-to-r from-orange-200 to-blue-400 rounded-[290px]">
               <div className='flex font-light justify-center items-center bg-black h-[51px] w-[171px] rounded-[290px]'>
@@ -47,26 +47,25 @@ const MyProcessOfWork = () => {
           <div className='mt-[59px]
                           max-md:mt-14'>
             <GameIconDown />
-            <h1 className='text-2xl mt-8'>Step2: Development</h1>
+            <h1 className='text-2xl mt-8 mb-2.5'>Step2: Development</h1>
             <ul className='opacity-80 font-light'>
-              <li>Frontend Development (React.js): Build the user interface, ensuring it&apos;s responsive and user-friendly. Focus on components, state management, and API integration.</li>
-              <li>Backend Development (Express.js & Node.js): Develop the server-side logic, create RESTful APIs, and handle authentication, data validation, and business logic.</li>
-              <li>Database Integration (MongoDB): Design the database schema, implement CRUD operations, and manage data connections.</li>
+              <li><b>Frontend Development (React.js):</b> Build the user interface, ensuring it&apos;s responsive and user-friendly. Focus on components, state management, and API integration.</li>
+              <li><b>Backend Development (Express.js & Node.js):</b> Develop the server-side logic, create RESTful APIs, and handle authentication, data validation, and business logic.</li>
+              <li><b>Database Integration (MongoDB):</b> Design the database schema, implement CRUD operations, and manage data connections.</li>
             </ul>
           </div>
 
           <div className='mt-[53px]
                           max-sm:mt-12 max-md:mt-12'>
             <GameIconLeft />
-            <h1 className='text-2xl mt-8'>Step3: Testing and Deployment</h1>
+            <h1 className='text-2xl mt-8 mb-2.5'>Step3: Testing and Deployment</h1>
             <ul className='opacity-80 font-light'>
-              <li>Testing: Perform unit testing, integration testing, and end-to-end testing to ensure the website functions as expected. Tools like Jest, Mocha, or Postman are commonly used.</li>
-              <li>Debugging and Optimization: Identify and fix any issues or bugs, optimize performance, and ensure security best practices are followed.</li>
-              <li>Deployment: Deploy the website to a hosting service like Hostinger, Vercel, Netlify, or AWS. Set up CI/CD pipelines and monitor the website post-deployment to ensure it runs smoothly.</li>
+              <li><b>Testing:</b> Perform unit testing, integration testing, and end-to-end testing to ensure the website functions as expected. Tools like Jest, Mocha, or Postman are commonly used.</li>
+              <li><b>Debugging and Optimization:</b> Identify and fix any issues or bugs, optimize performance, and ensure security best practices are followed.</li>
+              <li><b>Deployment:</b> Deploy the website to a hosting service like Hostinger, Vercel, Netlify, or AWS. Set up CI/CD pipelines and monitor the website post-deployment to ensure it runs smoothly.</li>
             </ul>
-
           </div>
-
+          
         </div>
       </section>
     </>
