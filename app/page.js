@@ -15,6 +15,7 @@ import MyProcessOfWork from './MyProcessOfWork/MyProcessOfWork';
 import GoToTop from './GoToTopButton/GoToTopSection';
 import NavigationSidebarForMobile from './NavigationSidebarForMobile/NavigationSidebarForMobile';
 import LogoWithNameInFooterForMobile from './LogoWithNameInFooterForMobile'
+import LaptopContainerForMobile from './Laptops/LaptopContainerForMobile'
 
 
 export default function Home() {
@@ -28,9 +29,10 @@ export default function Home() {
       <MyProcessOfWork />
 
       <SomeFeaturedProjects />
-      <div className='flex justify-center'>
-
+      
+      <div>
         <LaptopsContainer />
+        <LaptopContainerForMobile />
       </div>
 
       {/* MAKE THIS RESPONSIVE */}
@@ -38,15 +40,14 @@ export default function Home() {
                           max-sm:m-0 max-md:m-0'>
         <ClientTestimonials />
         <div className='mt-14 mx-5
-                        max-sm:mt-0 max-md:mt-0'>
+                        max-md:mt-0'>
           <div className='flex justify-center items-center mb-7
                           max-sm:block max-md:block'>
             <ClientTestimonialsCard2 />
             <ClientTestimonialsCard1 />
           </div>
-
           <div className='flex justify-center items-center
-                          max-sm:block max-md:block'>
+                          max-md:block'>
             <ClientTestimonialsCard3 />
             <ClientTestimonialsCard4 />
           </div>

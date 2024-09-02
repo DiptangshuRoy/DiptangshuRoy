@@ -27,7 +27,8 @@ const MyProcessOfWork = () => {
           <Numbers />
         </div>
 
-        <div className='flex-col leading-9 mt-5'>
+        <div className='flex-col leading-9 mt-5
+                        max-md:leading-7'>
           <div>
             <GameIconRight />
             <h1 className='text-2xl mt-8'>Step1: Planning and Design</h1>

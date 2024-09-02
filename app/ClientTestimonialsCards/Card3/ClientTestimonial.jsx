@@ -4,7 +4,8 @@ import TestimonialContent from "./TestimonialContent";
 
 function ClientTestimonial() {
   return (
-    <article className="relative flex overflow-hidden flex-col justify-center p-[2px] mr-11 text-white rounded-3xl bg-neutral-900 bg-opacity-40 gradient-border">
+    <article className="relative flex overflow-hidden flex-col justify-center p-[2px] mr-11 text-white rounded-3xl bg-neutral-900 bg-opacity-40 gradient-border
+                        max-md:mr-0">
       <div className="bg-black p-4 rounded-3xl">
         <ClientInfo
           name="Client Name"
