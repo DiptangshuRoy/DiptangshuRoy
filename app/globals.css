@@ -56,3 +56,23 @@ body {
   border-radius: inherit;
   z-index: -1;
 }
+
+/* DARK SCROLLBAR CODE */
+/* For Webkit-based browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2d2d2d; /* Dark background */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555; /* Darker thumb */
+  border-radius: 6px;
+  border: 3px solid #2d2d2d; /* Same as track background */
+}
+
+/* For Firefox */
+/* scrollbar-width: thin;
+scrollbar-color: #555 #2d2d2d; */
