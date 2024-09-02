@@ -9,7 +9,7 @@ const MyProcessOfWork = () => {
   return (
     <>
       <div className="flex flex-wrap gap-7 items-center text-4xl leading-none text-center text-white ml-20 mt-12 mb-14
-                      max-sm:ml-5 max-md:ml-5 max-sm:text-2xl max-md:text-2xl">
+                      max-sm:ml-5 max-md:ml-5 max-sm:text-2xl max-md:text-2xl max-md:mb-1">
         <h1 id="MyProcessOfWork" className="self-stretch my-auto max-md:max-w-full">
           My Process Of Work
         </h1>
@@ -44,7 +44,7 @@ const MyProcessOfWork = () => {
           </div>
 
           <div className='mt-[59px]
-                          max-sm:mt-20 max-md:mt-20'>
+                          max-md:mt-14'>
             <GameIconDown />
             <h1 className='text-2xl mt-8'>Step2: Development</h1>
             <ul className='opacity-80 font-light'>

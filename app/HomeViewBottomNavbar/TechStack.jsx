@@ -12,11 +12,12 @@ const techItems = [
 function TechStack() {
   return (
     <section className="flex overflow-hidden group cursor-pointer py-5 text-xl border-t border-b border-white border-opacity-30
-                        max-sm:h-24 max-md:h-24">
+                        max-sm:h-[88px] max-md:h-[88px]">
       {/* {techItems.map((item, index) => (
         <TechItem key={index} name={item.name} iconSrc={item.iconSrc} />
       ))} */}
-      <div className='flex animate-loop-scroll gap-10 group-hover:paused'>
+      <div className='flex animate-loop-scroll gap-10 group-hover:paused
+                      max-md:gap-1'>
         <Image src='/TechIcons/React.svg' height={70} width={70} className='max-w-none' alt=''></Image>
         <Image src='/TechIcons/Bootstrap.svg' height={70} width={70} className='max-w-none' alt=''></Image>
         <Image src='/TechIcons/Chatgpt.svg' height={70} width={70} className='max-w-none' alt=''></Image>
@@ -39,7 +40,8 @@ function TechStack() {
         <Image src='/TechIcons/Tailwind.svg' height={70} width={70} className='max-w-none' alt=''></Image>
         <Image src='/TechIcons/Vite.svg' height={70} width={70} className='max-w-none' alt=''></Image>
       </div>
-      <div className='flex animate-loop-scroll gap-10 group-hover:paused' aria-hidden='true'>
+      <div className='flex animate-loop-scroll gap-10 group-hover:paused
+                      max-md:gap-1' aria-hidden='true'>
         <Image src='/TechIcons/React.svg' height={70} width={70} className='max-w-none' alt=''></Image>
         <Image src='/TechIcons/Bootstrap.svg' height={70} width={70} className='max-w-none' alt=''></Image>
         <Image src='/TechIcons/Chatgpt.svg' height={70} width={70} className='max-w-none' alt=''></Image>
