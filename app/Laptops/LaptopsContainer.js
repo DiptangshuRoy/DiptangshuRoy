@@ -32,7 +32,7 @@ const LaptopsContainer = () => {
               <span className='px-3 py-1 border-2 font-semibold border-red-900 text-xs rounded-2xl'>JS</span>
               <span className='px-3 py-1 border-2 font-semibold border-red-900 text-xs rounded-2xl'>Tailwind</span>
               <Link href='https://my-netflix-clone-two.vercel.app/'>
-                <Image src='/RedirectIcon.svg' height={25} width={25} alt='visit'></Image>
+                <Image src='/RedirectIcon.svg' height={21} width={21} alt='visit'></Image>
               </Link>
             </div>
           </div>
@@ -56,7 +56,7 @@ const LaptopsContainer = () => {
               <span className='px-3 py-1 border-2 font-semibold border-green-700 text-xs rounded-2xl'>Tailwind</span>
               <span className='px-3 py-1 border-2 font-semibold border-green-700 text-xs rounded-2xl'>React.js</span>
               <Link href='https://my-netflix-clone-two.vercel.app/'>
-                <Image src='/RedirectIcon.svg' height={25} width={25} alt='visit'></Image>
+                <Image src='/RedirectIcon.svg' height={21} width={21} alt='visit'></Image>
               </Link>
             </div>
           </div>
@@ -83,7 +83,7 @@ const LaptopsContainer = () => {
               <span className='px-3 py-1 border-2 font-semibold border-blue-900 text-xs rounded-2xl'>JS</span>
               <span className='px-3 py-1 border-2 font-semibold border-blue-900 text-xs rounded-2xl'>Tailwind</span>
               <Link href='https://my-netflix-clone-two.vercel.app/'>
-                <Image src='/RedirectIcon.svg' height={25} width={25} alt='visit'></Image>
+                <Image src='/RedirectIcon.svg' height={21} width={21} alt='visit'></Image>
               </Link>
             </div>
           </div>
@@ -103,7 +103,7 @@ const LaptopsContainer = () => {
               <span className='px-3 py-1 border-2 font-semibold border-violet-900 text-xs rounded-2xl'>Tailwind</span>
               <span className='px-3 py-1 border-2 font-semibold border-violet-900 text-xs rounded-2xl'>React.js</span>
               <Link href='https://my-netflix-clone-two.vercel.app/'>
-                <Image src='/RedirectIcon.svg' height={25} width={25} alt='visit'></Image>
+                <Image src='/RedirectIcon.svg' height={21} width={21} alt='visit'></Image>
               </Link>
             </div>
           </div>
@@ -127,7 +127,7 @@ const LaptopsContainer = () => {
               <span className='px-3 py-1 border-2 font-semibold border-slate-600 text-xs rounded-2xl'>JS</span>
               <span className='px-3 py-1 border-2 font-semibold border-slate-600 text-xs rounded-2xl'>Tailwind</span>
               <Link href='https://my-netflix-clone-two.vercel.app/'>
-                <Image src='/RedirectIcon.svg' height={25} width={25} alt='visit'></Image>
+                <Image src='/RedirectIcon.svg' height={21} width={21} alt='visit'></Image>
               </Link>
             </div>
           </div>
