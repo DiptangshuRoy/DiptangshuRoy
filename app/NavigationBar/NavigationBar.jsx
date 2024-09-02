@@ -6,7 +6,7 @@ function NavigationBar() {
   const navItems = ['About', 'Projects', 'Contact me'];
 
   return (
-    <nav className="flex gap-10 justify-center items-center py-1.5 pr-8 pl-1.5 border-2 border-indigo-400 border-solid bg-zinc-900 rounded-[290px]
+    <nav className="flex gap-10 justify-center items-center py-1.5 pr-8 pl-1.5 border-2 border-indigo-400 border-solid bg-zinc-900 rounded-[290px] transition hover:scale-105
                     max-sm:hidden max-md:hidden">
       <Link href="/">
         <div className="flex gap-1.5 justify-center items-center self-stretch px-4 py-2 my-auto bg-zinc-800 rounded-[40px] w-[52px]">

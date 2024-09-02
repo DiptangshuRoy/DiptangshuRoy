@@ -29,12 +29,15 @@ const HaveIdeaAboutProject = () => {
             dove into learning everything I could about these technologies and quickly developed a profound interest in coding and
             programming. This journey has fueled my dedication and enthusiasm for the tech world.
           </span>
-          <Link href='mailto:diptangshuroybusiness@gmail.com' id='SendAMessage' className="w-44 gap-1.5 mt-5 self-stretch px-5 py-3.5 text-base font-medium text-center text-black border border-indigo-400 border-solid bg-[linear-gradient(90deg,#7A87FB_0%,#FFD49C_100%)] rounded-[40px]
-                                                                                            max-sm:mt-5 max-mb:mt-5">
-            <button id='SendAMessage' className='outline-none'>
-              Send a message
-            </button>
-          </Link>
+
+          <div id='SendAMessage' className='transition hover:scale-105 w-44 mt-5'>
+            <Link href='mailto:diptangshuroybusiness@gmail.com' className="px-5 py-3.5 text-base font-medium text-center text-black border border-indigo-400 border-solid bg-[linear-gradient(90deg,#7A87FB_0%,#FFD49C_100%)] rounded-[40px] 
+                                                                            max-sm:mt-5 max-mb:mt-5">
+              <button id='SendAMessage' className='outline-none'>
+                Send a message
+              </button>
+            </Link>
+          </div>
         </div>
       </section>
     </>
