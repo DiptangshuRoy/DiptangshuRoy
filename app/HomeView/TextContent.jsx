@@ -24,9 +24,9 @@ function TextContent() {
       <div className="flex gap-10 mt-10 justify-center items-center
                       max-sm:mt-14 max-md:mt-14">
         <Github />
+        {/* <Twitter /> */}
         <X />
         <Linkedin />
-        {/* <Twitter /> */}
       </div>
     </div>
   );

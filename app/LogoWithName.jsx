@@ -4,7 +4,7 @@ import React from 'react';
 function Logo() {
   return (
     <>
-      <Link href='/'>
+      <Link href='/' className='flex items-center'>
         <header className="flex items-center gap-3.5 text-2xl text-white whitespace-nowrap">
           <img
             loading="lazy"

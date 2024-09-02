@@ -18,51 +18,51 @@ function TechStack() {
       ))} */}
       <div className='flex animate-loop-scroll gap-10 group-hover:paused
                       max-md:gap-1'>
-        <Image src='/TechIcons/React.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Bootstrap.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Chatgpt.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Css.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Figma.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Git.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Github.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Html.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Javascript.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Mongodb.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Mongoose.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Nextjs.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Nextjs2.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Nodejs.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Npm.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Npm2.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Postman.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Pug.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        {/* <Image src='/TechIcons/Sass.svg' height={70} width={70} className='max-w-none' alt=''></Image> */}
-        <Image src='/TechIcons/Tailwind.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Vite.svg' height={70} width={70} className='max-w-none' alt=''></Image>
+        <Image src='/TechIcons/React.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Bootstrap.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Chatgpt.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Css.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Figma.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Git.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Github.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Html.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Javascript.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Mongodb.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Mongoose.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Nextjs.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Nextjs2.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Nodejs.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Npm.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Npm2.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Postman.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Pug.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        {/* <Image src='/TechIcons/Sass.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image> */}
+        <Image src='/TechIcons/Tailwind.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Vite.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
       </div>
       <div className='flex animate-loop-scroll gap-10 group-hover:paused
                       max-md:gap-1' aria-hidden='true'>
-        <Image src='/TechIcons/React.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Bootstrap.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Chatgpt.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Css.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Figma.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Git.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Github.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Html.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Javascript.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Mongodb.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Mongoose.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Nextjs.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Nextjs2.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Nodejs.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Npm.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Npm2.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Postman.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Pug.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        {/* <Image src='/TechIcons/Sass.svg' height={70} width={70} className='max-w-none' alt=''></Image> */}
-        <Image src='/TechIcons/Tailwind.svg' height={70} width={70} className='max-w-none' alt=''></Image>
-        <Image src='/TechIcons/Vite.svg' height={70} width={70} className='max-w-none' alt=''></Image>
+        <Image src='/TechIcons/React.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Bootstrap.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Chatgpt.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Css.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Figma.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Git.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Github.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Html.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Javascript.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Mongodb.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Mongoose.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Nextjs.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Nextjs2.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Nodejs.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Npm.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Npm2.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Postman.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Pug.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        {/* <Image src='/TechIcons/Sass.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image> */}
+        <Image src='/TechIcons/Tailwind.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
+        <Image src='/TechIcons/Vite.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
       </div>
     </section>
   );
