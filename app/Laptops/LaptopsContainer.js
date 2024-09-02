@@ -27,10 +27,10 @@ const LaptopsContainer = () => {
               also to add the images in the proper position & to make the Home picture look like exact Netflix&apos;s site was the tricky part here but I could manage it later.
             </span>
             <div className='mt-2 flex gap-2 items-center'>
-              <span className='px-3 py-1 border-2 border-red-900 text-xs rounded-2xl'>HTML</span>
-              <span className='px-3 py-1 border-2 border-red-900 text-xs rounded-2xl'>CSS</span>
-              <span className='px-3 py-1 border-2 border-red-900 text-xs rounded-2xl'>JS</span>
-              <span className='px-3 py-1 border-2 border-red-900 text-xs rounded-2xl'>Tailwind</span>
+              <span className='px-3 py-1 border-2 font-semibold border-red-900 text-xs rounded-2xl'>HTML</span>
+              <span className='px-3 py-1 border-2 font-semibold border-red-900 text-xs rounded-2xl'>CSS</span>
+              <span className='px-3 py-1 border-2 font-semibold border-red-900 text-xs rounded-2xl'>JS</span>
+              <span className='px-3 py-1 border-2 font-semibold border-red-900 text-xs rounded-2xl'>Tailwind</span>
               <Link href='https://my-netflix-clone-two.vercel.app/'>
                 <Image src='/RedirectIcon.svg' height={25} width={25} alt='visit'></Image>
               </Link>
@@ -50,11 +50,11 @@ const LaptopsContainer = () => {
               not running even if I add commands in vercel.json file.
             </span>
             <div className='mt-2 flex gap-2 items-center'>
-              <span className='px-3 py-1 border-2 border-green-700 text-xs rounded-2xl'>HTML</span>
-              <span className='px-3 py-1 border-2 border-green-700 text-xs rounded-2xl'>CSS</span>
-              <span className='px-3 py-1 border-2 border-green-700 text-xs rounded-2xl'>JS</span>
-              <span className='px-3 py-1 border-2 border-green-700 text-xs rounded-2xl'>Tailwind</span>
-              <span className='px-3 py-1 border-2 border-green-700 text-xs rounded-2xl'>React.js</span>
+              <span className='px-3 py-1 border-2 font-semibold border-green-700 text-xs rounded-2xl'>HTML</span>
+              <span className='px-3 py-1 border-2 font-semibold border-green-700 text-xs rounded-2xl'>CSS</span>
+              <span className='px-3 py-1 border-2 font-semibold border-green-700 text-xs rounded-2xl'>JS</span>
+              <span className='px-3 py-1 border-2 font-semibold border-green-700 text-xs rounded-2xl'>Tailwind</span>
+              <span className='px-3 py-1 border-2 font-semibold border-green-700 text-xs rounded-2xl'>React.js</span>
               <Link href='https://my-netflix-clone-two.vercel.app/'>
                 <Image src='/RedirectIcon.svg' height={25} width={25} alt='visit'></Image>
               </Link>
@@ -78,10 +78,10 @@ const LaptopsContainer = () => {
               days..
             </span>
             <div className='mt-2 flex gap-2 items-center'>
-              <span className='px-3 py-1 border-2 border-blue-900 text-xs rounded-2xl'>HTML</span>
-              <span className='px-3 py-1 border-2 border-blue-900 text-xs rounded-2xl'>CSS</span>
-              <span className='px-3 py-1 border-2 border-blue-900 text-xs rounded-2xl'>JS</span>
-              <span className='px-3 py-1 border-2 border-blue-900 text-xs rounded-2xl'>Tailwind</span>
+              <span className='px-3 py-1 border-2 font-semibold border-blue-900 text-xs rounded-2xl'>HTML</span>
+              <span className='px-3 py-1 border-2 font-semibold border-blue-900 text-xs rounded-2xl'>CSS</span>
+              <span className='px-3 py-1 border-2 font-semibold border-blue-900 text-xs rounded-2xl'>JS</span>
+              <span className='px-3 py-1 border-2 font-semibold border-blue-900 text-xs rounded-2xl'>Tailwind</span>
               <Link href='https://my-netflix-clone-two.vercel.app/'>
                 <Image src='/RedirectIcon.svg' height={25} width={25} alt='visit'></Image>
               </Link>
@@ -97,11 +97,11 @@ const LaptopsContainer = () => {
           <div className='flex flex-col'>
             <span>Then, for levelling up I created this web app. I used React library here and implemented browser&apos;s local-storage for storing user data.</span>
             <div className='mt-2 flex gap-2 items-center'>
-              <span className='px-3 py-1 border-2 border-violet-900 text-xs rounded-2xl'>HTML</span>
-              <span className='px-3 py-1 border-2 border-violet-900 text-xs rounded-2xl'>CSS</span>
-              <span className='px-3 py-1 border-2 border-violet-900 text-xs rounded-2xl'>JS</span>
-              <span className='px-3 py-1 border-2 border-violet-900 text-xs rounded-2xl'>Tailwind</span>
-              <span className='px-3 py-1 border-2 border-violet-900 text-xs rounded-2xl'>React.js</span>
+              <span className='px-3 py-1 border-2 font-semibold border-violet-900 text-xs rounded-2xl'>HTML</span>
+              <span className='px-3 py-1 border-2 font-semibold border-violet-900 text-xs rounded-2xl'>CSS</span>
+              <span className='px-3 py-1 border-2 font-semibold border-violet-900 text-xs rounded-2xl'>JS</span>
+              <span className='px-3 py-1 border-2 font-semibold border-violet-900 text-xs rounded-2xl'>Tailwind</span>
+              <span className='px-3 py-1 border-2 font-semibold border-violet-900 text-xs rounded-2xl'>React.js</span>
               <Link href='https://my-netflix-clone-two.vercel.app/'>
                 <Image src='/RedirectIcon.svg' height={25} width={25} alt='visit'></Image>
               </Link>
@@ -122,10 +122,10 @@ const LaptopsContainer = () => {
           <div className='flex flex-col'>
             <span>Made this website for sharpening my skills. This project sharpened my skills in developing a full-fledged website UI. Used Tailwind library.</span>
             <div className='mt-2 flex gap-2 items-center'>
-              <span className='px-3 py-1 border-2 border-slate-600 text-xs rounded-2xl'>HTML</span>
-              <span className='px-3 py-1 border-2 border-slate-600 text-xs rounded-2xl'>CSS</span>
-              <span className='px-3 py-1 border-2 border-slate-600 text-xs rounded-2xl'>JS</span>
-              <span className='px-3 py-1 border-2 border-slate-600 text-xs rounded-2xl'>Tailwind</span>
+              <span className='px-3 py-1 border-2 font-semibold border-slate-600 text-xs rounded-2xl'>HTML</span>
+              <span className='px-3 py-1 border-2 font-semibold border-slate-600 text-xs rounded-2xl'>CSS</span>
+              <span className='px-3 py-1 border-2 font-semibold border-slate-600 text-xs rounded-2xl'>JS</span>
+              <span className='px-3 py-1 border-2 font-semibold border-slate-600 text-xs rounded-2xl'>Tailwind</span>
               <Link href='https://my-netflix-clone-two.vercel.app/'>
                 <Image src='/RedirectIcon.svg' height={25} width={25} alt='visit'></Image>
               </Link>
