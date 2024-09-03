@@ -61,7 +61,7 @@ export default function Home() {
       </div>
 
       {/* MAKE THIS RESPONSIVE */}
-      <footer className='flex justify-around items-center mb-5
+      <footer className='flex justify-around items-center mb-5 
                           max-sm:flex-col-reverse max-md:flex-col-reverse max-sm:mt-10 max-md:mt-10 '>
         <div className='max-sm:hidden max-md:hidden'>
           <LogoWithName />
