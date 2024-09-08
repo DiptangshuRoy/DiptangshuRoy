@@ -10,9 +10,9 @@ function TextContent() {
   return (
     <div className="flex flex-col items-center px-44 mt-5 max-md:px-5 max-md:max-w-full
                     max-sm:mt-0 max-md:mt-0">
-      <h1 className="text-3xl leading-[56px] max-md:max-w-full">
+      <h2 className="text-3xl leading-[56px] max-md:max-w-full">
         I am a Full Stack Developer_
-      </h1>
+      </h2>
       <span className="mt-3 leading-6 max-md:max-w-full text-center">
         I use MERN technologies to seamlessly build websites with both backend and frontend components.
         {/* <Image className="ml-[2px] mr-1

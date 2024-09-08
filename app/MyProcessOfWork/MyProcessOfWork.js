@@ -31,7 +31,7 @@ const MyProcessOfWork = () => {
                         max-md:leading-7'>
           <div>
             <GameIconRight />
-            <h1 className='text-2xl mt-8 mb-2.5'>Step1: Planning and Design</h1>
+            <h2 className='text-2xl mt-8 mb-2.5'>Step1: Planning and Design</h2>
             <ul className='opacity-80 font-light'>
               <li><b>Requirement Gathering:</b> Understand the project&apos;s requirements, including features, user interface, and user experience.</li>
               <li><b>Wireframing and Prototyping:</b> Create wireframes and prototypes to visualize the layout and design of the website.</li>
@@ -47,7 +47,7 @@ const MyProcessOfWork = () => {
           <div className='mt-[59px]
                           max-md:mt-14'>
             <GameIconDown />
-            <h1 className='text-2xl mt-8 mb-2.5'>Step2: Development</h1>
+            <h2 className='text-2xl mt-8 mb-2.5'>Step2: Development</h2>
             <ul className='opacity-80 font-light'>
               <li><b>Frontend Development (React.js):</b> Build the user interface, ensuring it&apos;s responsive and user-friendly. Focus on components, state management, and API integration.</li>
               <li><b>Backend Development (Express.js & Node.js):</b> Develop the server-side logic, create RESTful APIs, and handle authentication, data validation, and business logic.</li>
@@ -58,7 +58,7 @@ const MyProcessOfWork = () => {
           <div className='mt-[53px]
                           max-sm:mt-12 max-md:mt-12'>
             <GameIconLeft />
-            <h1 className='text-2xl mt-8 mb-2.5'>Step3: Testing and Deployment</h1>
+            <h2 className='text-2xl mt-8 mb-2.5'>Step3: Testing and Deployment</h2>
             <ul className='opacity-80 font-light'>
               <li><b>Testing:</b> Perform unit testing, integration testing, and end-to-end testing to ensure the website functions as expected. Tools like Jest, Mocha, or Postman are commonly used.</li>
               <li><b>Debugging and Optimization:</b> Identify and fix any issues or bugs, optimize performance, and ensure security best practices are followed.</li>
