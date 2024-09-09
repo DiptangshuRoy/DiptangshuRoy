@@ -12,9 +12,9 @@ function Logo() {
             className="object-contain shrink-0 my-auto aspect-[1.3] w-[39px]"
             alt="Portfolio logo"
           />
-          <h1 id='DiptangshuRoy' className="text-2xl text-white">
+          <h2 id='DiptangshuRoy' className="text-2xl text-white">
             Diptangshu Roy
-          </h1>
+          </h2>
         </header>
       </Link>
     </>
