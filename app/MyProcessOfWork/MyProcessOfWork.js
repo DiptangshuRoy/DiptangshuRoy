@@ -10,9 +10,9 @@ const MyProcessOfWork = () => {
     <>
       <div className="flex flex-wrap gap-7 items-center text-4xl leading-none text-center text-white ml-20 mt-12 mb-14
                       max-sm:ml-5 max-md:ml-5 max-sm:text-2xl max-md:text-2xl max-md:mb-1">
-        <h1 id="MyProcessOfWork" className="self-stretch my-auto max-md:max-w-full">
+        <h2 id="MyProcessOfWork" className="self-stretch my-auto max-md:max-w-full">
           My Process Of Work
-        </h1>
+        </h2>
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/114e2af9913c687a0a4bf51163cb275023a08c71a2160a14c47cedc90958ec62?placeholderIfAbsent=true&apiKey=2385614b975c4d60b71bd5d3792c2e39"
