@@ -17,9 +17,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         {/* MAKE THIS nav RESPONSIVE */}
-        <h1 className='hidden'>Hello</h1>
+        {/* <h1 className='hidden'>Welcome to Diptangshu Roy's Portfolio</h1> */}
         <nav className='flex justify-around my-5'>
-          <LogoWithName />
+          <h1>
+            <LogoWithName />
+          </h1>
           <NavigationBar />
           <HireSection />
         </nav>
