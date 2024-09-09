@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         {/* MAKE THIS nav RESPONSIVE */}
+        <h1 className='hidden'>Hello</h1>
         <nav className='flex justify-around my-5'>
           <LogoWithName />
           <NavigationBar />
