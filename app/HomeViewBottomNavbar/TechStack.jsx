@@ -18,6 +18,8 @@ function TechStack() {
       ))} */}
       <div className='flex animate-loop-scroll gap-10 group-hover:paused
                       max-md:gap-1'>
+        {/* This empty <div> is neccessary for transition smoothly without any conflicts like occurance of dizzy looking. so, keep it. */}
+        <div className=''></div>
         <Image src='/TechIcons/React.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
         <Image src='/TechIcons/Bootstrap.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
         <Image src='/TechIcons/Chatgpt.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
@@ -42,6 +44,8 @@ function TechStack() {
       </div>
       <div className='flex animate-loop-scroll gap-10 group-hover:paused
                       max-md:gap-1' aria-hidden='true'>
+        {/* This empty <div> is neccessary for transition smoothly without any conflicts like occurance of dizzy looking. so, keep it. */}
+        <div className=''></div>
         <Image src='/TechIcons/React.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
         <Image src='/TechIcons/Bootstrap.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>
         <Image src='/TechIcons/Chatgpt.svg' height={70} width={70} className='max-w-none hover:scale-110 transition' alt=''></Image>

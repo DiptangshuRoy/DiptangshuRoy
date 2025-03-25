@@ -3,6 +3,7 @@ import "./globals.css";
 import NavigationBar from "./NavigationBar/NavigationBar";
 import LogoWithName from './LogoWithName';
 import HireSection from './HireSectionInNavbar/HireSection';
+import { color } from "framer-motion";
 
 
 const inter = Inter({ subsets: ["latin"] });
