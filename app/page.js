@@ -1,3 +1,4 @@
+"use client"
 import HomeView from './HomeView/MyComponent'
 import TechStack from './HomeViewBottomNavbar/TechStack';
 import SomeFeaturedProjects from './SomeFeaturedProjects';
@@ -16,20 +17,40 @@ import GoToTop from './GoToTopButton/GoToTopSection';
 import NavigationSidebarForMobile from './NavigationSidebarForMobile/NavigationSidebarForMobile';
 import LogoWithNameInFooterForMobile from './LogoWithNameInFooterForMobile'
 import LaptopContainerForMobile from './Laptops/LaptopContainerForMobile'
+import LogoWithNameForFooter from './LogoWithNameForFooter';
+
+import { cn } from "@/lib/utils";
+import { InteractiveGridPattern } from "@/components/magicui/interactive-grid-pattern";
+import { ParticlesDemo } from './ParticlesDemo';
+import { TerminalDemo } from './TerminalDemo';
 
 
 export default function Home() {
   return (
     <>
+      <div className='absolute right-0 top-64 z-50 bg-stone-700 pl-[34px] pr-6 rounded-tl-2xl rounded-bl-2xl max-2xl:hidden'>
+        <TerminalDemo />
+      </div>
+
       <NavigationSidebarForMobile />
 
       <HomeView />
+      <div className="bg-neutral-700 p-[0.1px] w-full"></div>
+      {/* <div className="bg-neutral-700 p-[0.1px] mt-[1px] w-full"></div> */}
       <TechStack />
+      <div className="bg-neutral-700 p-[0.1px] w-full"></div>
+      <div className='flex'>
+        <div className="bg-neutral-700 p-[0.1px] mt-[2px] w-10/12"></div>
+        <div className="bg-neutral-500 p-[0.1px] mt-[2px] w-20 ml-5"></div>
+        <div className="bg-indigo-950 p-[0.1px] mt-[2px] w-20 ml-4"></div>
+        <div className="bg-fuchsia-950 p-[0.1px] mt-[2px] w-20 ml-4"></div>
+        <div className="bg-amber-900 p-[0.1px] mt-[2px] w-24 ml-4"></div>
+      </div>
 
       <MyProcessOfWork />
 
       <SomeFeaturedProjects />
-      
+
       <div>
         <LaptopsContainer />
         <LaptopContainerForMobile />
@@ -64,7 +85,7 @@ export default function Home() {
       <footer className='flex justify-around items-center mb-5 
                           max-sm:flex-col-reverse max-md:flex-col-reverse max-sm:mt-10 max-md:mt-10 '>
         <div className='max-sm:hidden max-md:hidden'>
-          <LogoWithName />
+          <LogoWithNameForFooter />
         </div>
         <FooterNavbar />
         <div className='max-sm:hidden max-md:hidden'>
@@ -76,6 +97,7 @@ export default function Home() {
                       md:hidden'>
         <LogoWithNameInFooterForMobile />
       </div>
+
     </>
   );
 }

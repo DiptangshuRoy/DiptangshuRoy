@@ -12,7 +12,7 @@ const techItems = [
 function TechStack() {
   return (
     <section className="flex overflow-hidden group cursor-pointer py-5 text-xl border-t border-b border-white border-opacity-30
-                        max-sm:h-[88px] max-md:h-[88px]">
+                        max-sm:h-[88px] max-md:h-[88px] bg-neutral-900">
       {/* {techItems.map((item, index) => (
         <TechItem key={index} name={item.name} iconSrc={item.iconSrc} />
       ))} */}

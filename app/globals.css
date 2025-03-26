@@ -11,7 +11,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
+    --background-start-rgb: 23, 23, 23;
     --background-end-rgb: 0, 0, 0;
   }
 }
@@ -21,7 +21,28 @@ body {
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+      /* Neutral dark gray */
+      /* background-color: #171717;  */
 }
+
+/* Remove default focus outline */
+* {
+  outline: none;
+  border: none;
+}
+/* Prevents unwanted border or flash effect on click */
+*:focus,
+*:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+/* Keep accessibility for keyboard navigation */
+*:focus-visible {
+  outline: 2px solid #ffd700; /* Optional: Custom focus style */
+  box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
 
 @layer utilities {
   .text-balance {

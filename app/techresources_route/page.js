@@ -1,6 +1,9 @@
 import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
+import { Nextjs } from './Nextjs';
+import { React_img } from './React_img';
+
 
 export const metadata = {
   title: "Tech Resources I Utilize Daily",
@@ -11,6 +14,11 @@ const page = () => {
   return (
     <>
       <section className='flex flex-col gap-7 mt-10'>
+<div className='flex justify-center items-center gap-10 max-md:flex-col'>
+<Nextjs />
+<React_img />
+{/* <Nextjs /> */}
+</div>
 
         <div className='flex bg-slate-800 mx-10 rounded-md py-5 px-10 transition hover:scale-[1.02]'>
           <div className='flex flex-col justify-around'>

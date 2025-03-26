@@ -7,7 +7,7 @@ function NavigationBar() {
 
   return (
     <nav className="flex gap-10 justify-center items-center py-1.5 pr-8 pl-1.5 border-2 border-indigo-400 border-solid bg-zinc-900 rounded-[290px] transition hover:scale-105
-                    max-sm:hidden max-md:hidden">
+                    max-sm:hidden max-md:hidden ml-[123px] max-xl:ml-0">
       <Link href="/">
         <div className="flex gap-1.5 justify-center items-center self-stretch px-4 py-2 my-auto bg-zinc-800 rounded-[40px] w-[52px]">
           <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6d7e68a46c04f3adfe57e8a577bbc961b545f3f9c1c32ef25e43c3563f31b6ea?placeholderIfAbsent=true&apiKey=2385614b975c4d60b71bd5d3792c2e39"

@@ -6,6 +6,7 @@ import GameIconRight from '../GameIconRight';
 import Link from 'next/link';
 import ShineBorder from '@/components/magicui/shine-border';
 
+
 const LaptopsContainer = () => {
   return (
     <>

@@ -4,13 +4,13 @@ import React from 'react';
 import { MorphingText } from "@/components/magicui/morphing-text";
 const texts = [
   "Hi,",
-  "I am,",
+  "I am",
   "Diptangshu Roy",
-  "Welcomee..",
+  "Welcome ..",
   "to my portfolio",
 ];
 
-function Logo() {
+function LogoWithNameForFooter() {
   return (
     <>
       <Link href='/' className='flex items-center'>
@@ -22,13 +22,10 @@ function Logo() {
             alt="Portfolio logo"
           />
           <h2 id='DiptangshuRoy' className=" text-white ">
-            <div className='max-xl:block hidden'>
+            <div className=''>
               Diptangshu Roy
             </div>
-            <div className='max-xl:hidden'>
-              <MorphingText texts={texts} />
-            </div>
-            {/* MorphingText is relative position */}
+    
           </h2>
         </header>
       </Link>
@@ -36,4 +33,4 @@ function Logo() {
   );
 }
 
-export default Logo;
+export default LogoWithNameForFooter;
