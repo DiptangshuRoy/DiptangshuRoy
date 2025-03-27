@@ -43,7 +43,7 @@ export default function Home() {
       <NavigationSidebarForMobile />
 
       <HomeView />
-      <div className="bg-neutral-700 p-[0.1px] w-full"></div>
+      {/* <div className="bg-neutral-700 p-[0.4px] w-full"></div> */}
       {/* <div className="bg-neutral-700 p-[0.1px] mt-[1px] w-full"></div> */}
       <TechStack />
       <div className="bg-neutral-700 p-[0.1px] w-full"></div>
@@ -107,8 +107,6 @@ export default function Home() {
                       md:hidden'>
         <LogoWithNameInFooterForMobile />
       </div>
-      <a href="https://lordicon.com/">Icons by Lordicon.com</a>
-
     </>
   );
 }
