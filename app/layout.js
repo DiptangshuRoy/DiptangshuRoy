@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavigationBar from "./NavigationBar/NavigationBar";
+// import { DockDemo } from "./NavigationBar/NavigationBar";
 import LogoWithName from './LogoWithName';
 import HireSection from './HireSectionInNavbar/HireSection';
 import { color } from "framer-motion";
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
             <LogoWithName />
           </h1>
           <NavigationBar />
+          {/* <DockDemo /> */}
           <HireSection />
         </nav>
         {children}

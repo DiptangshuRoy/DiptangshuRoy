@@ -18,17 +18,20 @@ import NavigationSidebarForMobile from './NavigationSidebarForMobile/NavigationS
 import LogoWithNameInFooterForMobile from './LogoWithNameInFooterForMobile'
 import LaptopContainerForMobile from './Laptops/LaptopContainerForMobile'
 import LogoWithNameForFooter from './LogoWithNameForFooter';
+import Script from 'next/script';
 
 import { cn } from "@/lib/utils";
 import { InteractiveGridPattern } from "@/components/magicui/interactive-grid-pattern";
 import { ParticlesDemo } from './ParticlesDemo';
 import { TerminalDemo } from './TerminalDemo';
 import { FileTreeDemo } from './FileTreeDemo';
+import GoDownButton from './GoDownButton';
 
 
 export default function Home() {
   return (
     <>
+      <Script src="https://cdn.lordicon.com/lordicon.js"></Script>
       <div className='absolute left-[2px] top-72 z-50 max-lg:hidden'>
         <FileTreeDemo />
       </div>
@@ -51,6 +54,8 @@ export default function Home() {
         <div className="bg-fuchsia-950 p-[0.1px] mt-[2px] w-20 ml-4"></div>
         <div className="bg-amber-900 p-[0.1px] mt-[2px] w-24 ml-4"></div>
       </div>
+
+      {/* <GoDownButton /> */}
 
       <MyProcessOfWork />
 
@@ -102,6 +107,7 @@ export default function Home() {
                       md:hidden'>
         <LogoWithNameInFooterForMobile />
       </div>
+      <a href="https://lordicon.com/">Icons by Lordicon.com</a>
 
     </>
   );

@@ -37,7 +37,7 @@ function ContentSection() {
         {/* Animated Grid Background */}
         <div className="absolute inset-0 max-md:h-[100vh]">
           <div>
-            <Meteors number={30} />
+            <Meteors number={6} />
           </div>
           <AnimatedGridPattern
             numSquares={30}

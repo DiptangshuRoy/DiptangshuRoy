@@ -30,6 +30,7 @@ export default NavigationBar;
 
 
 // "use client";
+
 // import { CalendarIcon, HomeIcon, MailIcon, PencilIcon } from "lucide-react";
 // import Link from "next/link";
 // import React from "react";
@@ -46,10 +47,7 @@ export default NavigationBar;
 // import { cn } from "@/lib/utils";
 // import { Dock, DockIcon } from "@/components/magicui/dock";
 
-// /**
-//  * @typedef {Object} IconProps
-//  * @property {React.HTMLAttributes<SVGElement>} props
-//  */
+// // export type IconProps = React.HTMLAttributes<SVGElement>;
 
 // const Icons = {
 //   calendar: (props) => <CalendarIcon {...props} />,
@@ -126,7 +124,7 @@ export default NavigationBar;
 //   },
 // };
 
-// export function NavigationBar() {
+// export function DockDemo() {
 //   return (
 //     <div className="flex flex-col items-center justify-center">
 //       <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">

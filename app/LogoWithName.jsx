@@ -4,9 +4,9 @@ import React from 'react';
 import { MorphingText } from "@/components/magicui/morphing-text";
 const texts = [
   "Hi,",
-  "I am,",
+  "I am_",
   "Diptangshu Roy",
-  "Welcomee..",
+  "Welcomee\"",
   "to my portfolio",
 ];
 

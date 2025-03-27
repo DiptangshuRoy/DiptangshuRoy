@@ -46,7 +46,7 @@ function TextContent() {
         {/* <button className="py-2.5 pr-7 pl-7 mt-3 max-w-full font-medium leading-snug border-indigo-400 border-solid bg-[linear-gradient(90deg,#7A87FB_0%,#FFD49C_100%)] border-[1.5px] min-h-[43px] rounded-[72.09px] text-neutral-900 w-[119px] max-md:px-5">
         Hire me
       </button> */}
-        <div className="flex gap-10 mt-10 justify-center items-center
+        <div className="flex gap-10 max-md:gap-[22px] mt-10 justify-center items-center
                       max-sm:mt-14 max-md:mt-14">
           <Twitter />
           <X />

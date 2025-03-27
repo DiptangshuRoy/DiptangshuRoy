@@ -3,41 +3,51 @@
 import { useEffect, useState } from "react";
 
 export default function ScrollDownButton() {
-  const [isBouncing, setIsBouncing] = useState(false); // Initially false
+  const [isBouncing, setIsBouncing] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setIsBouncing(true); // Start bouncing after 3 seconds
+      setIsBouncing(true);
     }, 2500);
 
     return () => clearTimeout(timeout);
   }, []);
 
   const handleScroll = () => {
-    setIsBouncing(false); // Stop animation when clicked
+    setIsBouncing(false);
     window.scrollTo({
       top: window.scrollY + window.innerHeight,
       behavior: "smooth",
     });
 
-    // Restart animation after 4 seconds if not clicked again and not at bottom
     setTimeout(() => {
-      if (!isAtBottom()) {
+      if (!isNearBottom()) {
         setIsBouncing(true);
       }
     }, 4000);
   };
 
-  const isAtBottom = () => {
-    return window.innerHeight + window.scrollY >= document.body.offsetHeight;
+  // Hide the button when close to the bottom
+  const isNearBottom = () => {
+    const threshold = 40; // Adjust this value for earlier hiding
+    return (
+      document.body.offsetHeight - window.innerHeight - window.scrollY < threshold
+    );
   };
 
   useEffect(() => {
     const handleScrollEvent = () => {
-      if (window.scrollY === 0) {
-        setIsBouncing(true); // Restart animation when back at the top
-      } else if (isAtBottom()) {
-        setIsBouncing(false); // Stop animation at the bottom
+      const scrollThreshold = 200; // Adjust threshold for first appearance
+
+      if (!isNearBottom()) {
+        setIsVisible(true); // Always visible unless near the bottom
+      } else {
+        setIsVisible(false); // Hide near the bottom
+      }
+
+      if (isNearBottom()) {
+        setIsBouncing(false);
       }
     };
 
@@ -48,12 +58,17 @@ export default function ScrollDownButton() {
   return (
     <button
       onClick={handleScroll}
-      className={`z-50 fixed bottom-5 right-8 px-6 py-3 rounded-full bg-stone-700 text-stone-300 text-lg font-semibold shadow-lg transition-all duration-300 
-        border-2 border-transparent hover:bg-indigo-800 hover:scale-105 hover:border-yellow-400 ${
-          isBouncing ? "animate-bounce" : ""
-        } outline-none focus:ring-0 focus:outline-none`}
+      className={`fixed bottom-[10px] right-8 text-stone-300 text-lg font-semibold shadow-lg transition-all duration-300 hover:scale-110 max-md:hidden 
+        ${isVisible ? "opacity-100" : "opacity-0 pointer-events-none"} 
+        outline-none focus:ring-0 focus:outline-none`}
     >
-      ↓
+      <lord-icon
+        src="https://cdn.lordicon.com/xcrjfuzb.json"
+        trigger="loop"
+        delay="3500"
+        colors="primary:#fae6d1"
+        style={{ width: 40, height: 40 }}
+      ></lord-icon>
     </button>
   );
 }
