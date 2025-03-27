@@ -235,7 +235,7 @@ const defaultItemAnimationVariants = {
 export function TextAnimate({
   children,
   delay = 0,
-  duration = 0.7,
+  duration = 0.5,
   variants,
   className,
   segmentClassName,

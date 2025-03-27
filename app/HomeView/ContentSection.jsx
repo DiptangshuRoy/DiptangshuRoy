@@ -30,9 +30,9 @@ import { Meteors } from "@/components/magicui/meteors";
 function ContentSection() {
   return (
     <>
-      {/* <div className="absolute right-36">
-        <CopyButton text="Hello, I am Diptangshu Roy!" />
-      </div> */}
+      <div className="max-md:hidden">
+        <CopyButton text="diptangshuroybusiness@gmail.com" />
+      </div>
       <section className="relative flex flex-col grow shrink-0 px-20 pt-16 pb-72 basis-0 min-h-[567px] w-fit max-md:px-5 max-md:pb-24 max-md:max-w-full items-center overflow-hidden">
         {/* Animated Grid Background */}
         <div className="absolute inset-0 max-md:h-[100vh]">

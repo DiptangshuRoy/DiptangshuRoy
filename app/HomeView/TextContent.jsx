@@ -19,9 +19,9 @@ function TextContent() {
   const shadowColor = theme.resolvedTheme === "dark" ? "white" : "gold";
   return (
     <>
-      <div className=" flex flex-col items-center justify-center px-44 max-md:px-5 max-md:max-w-full
-                    max-sm:mt-0 max-md:mt-0">
-        <h2 className="text-3xl leading-[56px] max-md:max-w-full">
+      <div className=" flex flex-col items-center justify-center px-44 mt-5
+                        max-md:px-5 max-md:max-w-full max-md:mt-0">
+        <h2 className="text-3xl leading-[76px] max-md:max-w-full">
 
           <div className="hidden xl:block">
             <LineShadowText className="italic" shadowColor={shadowColor}>
@@ -36,7 +36,7 @@ function TextContent() {
           </div>
 
         </h2>
-        <span className="mt-3 leading-6 max-md:max-w-full text-center">
+        <span className="mt-3 leading-9 max-md:max-w-full text-center">
           <TextAnimate animation="fadeIn" by="line" as="p">
             I use MERN technologies to seamlessly build websites with both backend and frontend components.
             {/* <Image className="ml-[2px] mr-1

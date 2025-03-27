@@ -20,6 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+      {/* <Pointer /> */}
         <ScrollDownButton />
           {/* This is a custom cursor */}
         {/* <Pointer /> */}

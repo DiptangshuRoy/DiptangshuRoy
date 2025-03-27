@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./Header";
+import Header from "./Header"; //THIS IS A STAR⭐
 import ContentSection from "./ContentSection";
 import ContentWrapper from "./ContentWrapper";
 
@@ -9,7 +9,8 @@ function MyComponent() {
     max-md:px-0
     ">
       <div className="flex w-full max-md:max-w-full">
-        <Header />
+        {/* THIS IS A STAR⭐ */}
+        {/* <Header /> */}
         <ContentSection />
         {/* <ContentWrapper /> */}
       </div>

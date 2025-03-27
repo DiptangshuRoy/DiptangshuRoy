@@ -23,12 +23,17 @@ import { cn } from "@/lib/utils";
 import { InteractiveGridPattern } from "@/components/magicui/interactive-grid-pattern";
 import { ParticlesDemo } from './ParticlesDemo';
 import { TerminalDemo } from './TerminalDemo';
+import { FileTreeDemo } from './FileTreeDemo';
 
 
 export default function Home() {
   return (
     <>
-      <div className='absolute right-0 top-64 z-50 bg-stone-700 pl-[34px] pr-6 rounded-tl-2xl rounded-bl-2xl max-2xl:hidden'>
+      <div className='absolute left-[2px] top-72 z-50 max-lg:hidden'>
+        <FileTreeDemo />
+      </div>
+
+      <div className='absolute right-0 top-64 bg-stone-700 pl-[34px] pr-6 rounded-tl-2xl rounded-bl-2xl max-2xl:hidden'>
         <TerminalDemo />
       </div>
 
