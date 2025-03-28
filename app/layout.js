@@ -8,6 +8,7 @@ import { color } from "framer-motion";
 import { Pointer } from "@/components/magicui/pointer";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import ScrollDownButton from "./ScrollDownButton";
+import WarningForMobile from "./WarningForMobile";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,14 +22,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-      {/* <Pointer /> */}
+
+        {/* <Pointer /> */}
         <ScrollDownButton />
-          {/* This is a custom cursor */}
+        {/* This is a custom cursor */}
         {/* <Pointer /> */}
         {/* MAKE THIS nav RESPONSIVE */}
         {/* <h1 className='hidden'>Welcome to Diptangshu Roy's Portfolio</h1> */}
         <ScrollProgress className="" />
-        <nav className='flex justify-around my-5 bg-neutral-900'>
+        {/* <WarningForMobile /> */}
+        <nav className='flex justify-around my-5 max-md:mt-2 bg-neutral-900'>
           <h1>
             <LogoWithName />
           </h1>

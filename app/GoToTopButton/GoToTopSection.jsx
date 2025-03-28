@@ -6,8 +6,7 @@ import NavbarButtonForMobile from '../NavbarButtonForMobile/Navbar';
 function GoToTopSection() {
   return (
     <section className="flex flex-col max-w-[160px]">
-      <div className="flex items-start
-                      max-sm:hidden max-md:hidden">
+      <div className="flex items-start">
         <GoToTopButton />
         {/* <div className="flex flex-col w-[49px]">
           <GradientIcon />

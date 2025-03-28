@@ -58,7 +58,7 @@ export default function ScrollDownButton() {
   return (
     <button
       onClick={handleScroll}
-      className={`fixed bottom-[10px] right-8 text-stone-300 text-lg font-semibold shadow-lg transition-all duration-300 hover:scale-110 max-md:hidden 
+      className={`fixed bottom-[10px] right-8 text-stone-300 text-lg font-semibold shadow-lg transition-all duration-300 hover:scale-110 z-40 max-md:right-1 max-md:bottom-2 max-md:scale-75
         ${isVisible ? "opacity-100" : "opacity-0 pointer-events-none"} 
         outline-none focus:ring-0 focus:outline-none`}
     >

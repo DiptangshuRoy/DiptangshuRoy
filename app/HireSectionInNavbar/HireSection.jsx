@@ -13,7 +13,7 @@ function HireSection() {
           <GradientIcon />
         </div>
       </div>
-      <NavbarButtonForMobile />
+      {/* <NavbarButtonForMobile /> */}
     </section>
   );
 }

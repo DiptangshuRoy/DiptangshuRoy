@@ -32,6 +32,7 @@ export default function Home() {
   return (
     <>
       <Script src="https://cdn.lordicon.com/lordicon.js"></Script>
+      
       <div className='absolute left-[2px] top-72 z-50 max-lg:hidden'>
         <FileTreeDemo />
       </div>
@@ -40,7 +41,9 @@ export default function Home() {
         <TerminalDemo />
       </div>
 
-      <NavigationSidebarForMobile />
+      <div className='md:hidden'>
+        <NavigationSidebarForMobile />
+      </div>
 
       <HomeView />
       {/* <div className="bg-neutral-700 p-[0.4px] w-full"></div> */}
@@ -98,14 +101,15 @@ export default function Home() {
           <LogoWithNameForFooter />
         </div>
         <FooterNavbar />
-        <div className='max-sm:hidden max-md:hidden'>
+        <div className='max-md:hidden'>
           <GoToTop />
         </div>
       </footer>
 
-      <div className='m-5
+      <div className='my-3 flex justify-center items-center gap-7
                       md:hidden'>
         <LogoWithNameInFooterForMobile />
+        <GoToTop />
       </div>
     </>
   );
