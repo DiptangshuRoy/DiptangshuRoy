@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
         {/* <h1 className='hidden'>Welcome to Diptangshu Roy's Portfolio</h1> */}
         <ScrollProgress className="" />
         {/* <WarningForMobile /> */}
-        <nav className='flex justify-around my-5 max-md:mt-2 bg-neutral-900'>
+        <nav className='flex justify-around mt-5 mb-4 max-md:mt-2 bg-neutral-900'>
           <h1>
             <LogoWithName />
           </h1>
