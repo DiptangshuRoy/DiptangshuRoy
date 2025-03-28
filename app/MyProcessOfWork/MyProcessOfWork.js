@@ -37,9 +37,10 @@ const MyProcessOfWork = () => {
 
       <section className='flex gap-10 ml-36
                         max-md:mx-5'>
-        <div className='max-md:hidden'>
+        {/* THIS IS 1 2 3 NUMBERS BESIDE STEP1: , STEP:2 , STEP3: */}
+        {/* <div className='max-md:hidden'>
           <Numbers />
-        </div>
+        </div> */}
 
         <div className='flex-col leading-9 mt-5
                         max-md:leading-7'>
