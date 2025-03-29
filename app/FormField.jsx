@@ -82,6 +82,7 @@ export function FormField() {
           data-netlify-honeypot="bot-field"
           className="space-y-4"
           onSubmit={handleSubmit}
+          netlify
         >
           {/* Netlify Hidden Fields */}
           <input type="hidden" name="form-name" value="contact" />
