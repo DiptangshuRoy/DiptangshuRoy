@@ -40,7 +40,7 @@ export function FormField() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     setIsSubmitting(true);
-    
+
     const formData = new FormData(event.target);
     const formErrors = validateForm(formData);
 
@@ -54,7 +54,9 @@ export function FormField() {
     try {
       await fetch("/", {
         method: "POST",
-        body: formData,
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams([...formData]),
+        redirect: "follow",
       });
       alert("Form submitted successfully!");
       event.target.reset();
