@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link';
 import { MagicCard } from "@/components/magicui/magic-card";
-import {FormField} from '../FormField';
+// import {FormField} from '../FormField';
 // import FormField from '../FormField';
 
 const HaveIdeaAboutProject = () => {
@@ -24,17 +24,17 @@ const HaveIdeaAboutProject = () => {
         </div>
 
         <div className='flex flex-col'>
-          {/* <span className='w-[50vw]
+          <span className='w-[50vw]
                           max-sm:w-full max-md:w-full'>
             If you have any project ideas, feel free to send me a message.
             I'm always open to discussing new and exciting concepts.
             Whether it's web development or tech innovation, let's build something great.
             Drop me a message, and let's bring ideas to life!
-          </span> */}
+          </span>
 
-          <FormField />
+          {/* <FormField /> */}
 
-          {/* <div id='SendAMessage' className='transition hover:scale-105 w-44 mt-6
+          <div id='SendAMessage' className='transition hover:scale-105 w-44 mt-6
                                             max-md:mt-8 max-md:mb-2'>
             <Link href='mailto:diptangshuroybusiness@gmail.com' className="px-5 py-3.5 text-base font-medium text-center text-black border border-indigo-400 border-solid bg-[linear-gradient(90deg,#7A87FB_0%,#FFD49C_100%)] rounded-[40px] 
                                                                             max-sm:mt-5 max-mb:mt-5">
@@ -42,7 +42,7 @@ const HaveIdeaAboutProject = () => {
                 Send a message
               </button>
             </Link>
-          </div> */}
+          </div>
         </div>
       </section>
     </>
