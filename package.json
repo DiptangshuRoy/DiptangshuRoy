@@ -37,7 +37,6 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^4.29.3",
     "@types/node": "22.13.13",
     "@types/react": "19.0.12",
     "eslint": "^8",
