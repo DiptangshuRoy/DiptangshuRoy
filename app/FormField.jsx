@@ -17,6 +17,7 @@ import { Textarea } from "@/components/ui/textarea";
 export function FormField() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState({});
+  const [successMessage, setSuccessMessage] = useState("");
 
   const validateForm = (formData) => {
     let newErrors = {};
@@ -40,6 +41,7 @@ export function FormField() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     setIsSubmitting(true);
+    setSuccessMessage("");
 
     const formData = new FormData(event.target);
     const formErrors = validateForm(formData);
@@ -50,17 +52,21 @@ export function FormField() {
       return;
     }
 
-    // Submit form to Netlify
+    // Submit form data to Formspree
     try {
-      await fetch("/", {
+      const response = await fetch("https://formspree.io/f/mvgkbqez", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams([...formData]),
-        redirect: "follow",
+        headers: { "Accept": "application/json" },
+        body: formData,
       });
-      alert("Form submitted successfully!");
-      event.target.reset();
-      setErrors({});
+
+      if (response.ok) {
+        setSuccessMessage("Your message has been sent successfully!");
+        event.target.reset();
+        setErrors({});
+      } else {
+        throw new Error("Form submission failed");
+      }
     } catch (error) {
       console.error("Form submission error:", error);
     } finally {
@@ -69,29 +75,13 @@ export function FormField() {
   };
 
   return (
-    <Card className="relative overflow-hidden text-white w-[43vw]">
+    <Card className="relative overflow-hidden text-white w-[43vw] max-md:w-[85vw]">
       <CardHeader>
-        <CardTitle>Contact Us</CardTitle>
-        <CardDescription>Fill out the form and we will get back to you</CardDescription>
+        <CardTitle>Contact Me</CardTitle>
+        <CardDescription>Fill out the form and I will get back to you</CardDescription>
       </CardHeader>
       <CardContent>
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          className="space-y-4"
-          onSubmit={handleSubmit}
-          netlify
-        >
-          {/* Netlify Hidden Fields */}
-          <input type="hidden" name="form-name" value="contact" />
-          <p className="hidden">
-            <label>
-              Don’t fill this out if you’re human: <input name="bot-field" />
-            </label>
-          </p>
-
+        <form className="space-y-4" onSubmit={handleSubmit}>
           {/* Name Field */}
           <div className="grid gap-2">
             <Label htmlFor="name">Name</Label>
@@ -132,6 +122,9 @@ export function FormField() {
             />
             {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
           </div>
+
+          {/* Success Message */}
+          {successMessage && <p className="text-green-500 text-sm">{successMessage}</p>}
 
           {/* Submit Button */}
           <Button
