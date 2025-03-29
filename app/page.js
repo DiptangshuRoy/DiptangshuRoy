@@ -26,6 +26,7 @@ import { ParticlesDemo } from './ParticlesDemo';
 import { TerminalDemo } from './TerminalDemo';
 import { FileTreeDemo } from './FileTreeDemo';
 import GoDownButton from './GoDownButton';
+import { FormField } from './FormField';
 
 
 export default function Home() {

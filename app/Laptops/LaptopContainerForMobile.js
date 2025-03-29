@@ -10,10 +10,6 @@ const LaptopsContainer = () => {
   const a = '</>'
   return (
     <>
-      {/* <ShineBorder
-        className="relative flex h-full w-[95vw] flex-col items-center justify-center overflow-hidden rounded-lg  bg-background md:shadow-xl"
-        color={["#A07CFE", "#FE8FB5", "#FFBE7B",]}
-      > */}
       <section className='m-24
                             max-md:m-0 max-sm:mt-10 max-md:mt-24 max-md:mx-10 md:hidden'>
         <div className='flex justify-center items-center 
@@ -135,7 +131,6 @@ const LaptopsContainer = () => {
           {/* <GameIconDown /> */}
         </div>
       </section>
-      {/* </ShineBorder> */}
     </>
   )
 }
