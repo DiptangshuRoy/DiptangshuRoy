@@ -1,9 +1,6 @@
 "use client";
 
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import * as z from "zod";
-
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -17,20 +14,57 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 
-const formSchema = z.object({
-  name: z.string().min(3, "Name must be at least 3 characters"),
-  email: z.string().email("Invalid email format"),
-  message: z.string().min(10, "Message must be at least 10 characters"),
-});
-
 export function FormField() {
-  const {
-    register,
-    formState: { errors, isSubmitting },
-    reset,
-  } = useForm({
-    resolver: zodResolver(formSchema),
-  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errors, setErrors] = useState({});
+
+  const validateForm = (formData) => {
+    let newErrors = {};
+
+    if (formData.get("name").trim().length < 3) {
+      newErrors.name = "Name must be at least 3 characters";
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(formData.get("email"))) {
+      newErrors.email = "Invalid email format";
+    }
+
+    if (formData.get("message").trim().length < 10) {
+      newErrors.message = "Message must be at least 10 characters";
+    }
+
+    return newErrors;
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setIsSubmitting(true);
+    
+    const formData = new FormData(event.target);
+    const formErrors = validateForm(formData);
+
+    if (Object.keys(formErrors).length > 0) {
+      setErrors(formErrors);
+      setIsSubmitting(false);
+      return;
+    }
+
+    // Submit form to Netlify
+    try {
+      await fetch("/", {
+        method: "POST",
+        body: formData,
+      });
+      alert("Form submitted successfully!");
+      event.target.reset();
+      setErrors({});
+    } catch (error) {
+      console.error("Form submission error:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <Card className="relative overflow-hidden text-white w-[43vw]">
@@ -45,6 +79,7 @@ export function FormField() {
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           className="space-y-4"
+          onSubmit={handleSubmit}
         >
           {/* Netlify Hidden Fields */}
           <input type="hidden" name="form-name" value="contact" />
@@ -60,12 +95,12 @@ export function FormField() {
             <Input
               id="name"
               type="text"
-              {...register("name")}
               name="name"
               className="bg-gray-800 border-gray-700 text-white"
-              placeholder="John Doe"
+              placeholder="Your name here"
+              required
             />
-            {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
+            {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
           </div>
 
           {/* Email Field */}
@@ -74,12 +109,12 @@ export function FormField() {
             <Input
               id="email"
               type="email"
-              {...register("email")}
               name="email"
               className="bg-gray-800 border-gray-700 text-white"
-              placeholder="name@example.com"
+              placeholder="Your email address"
+              required
             />
-            {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
+            {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
           </div>
 
           {/* Message Field */}
@@ -87,12 +122,12 @@ export function FormField() {
             <Label htmlFor="message">Message</Label>
             <Textarea
               id="message"
-              {...register("message")}
               name="message"
               className="bg-gray-800 border-gray-700 text-white"
               placeholder="Write your message..."
+              required
             />
-            {errors.message && <p className="text-red-500 text-sm">{errors.message.message}</p>}
+            {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
           </div>
 
           {/* Submit Button */}
@@ -109,54 +144,3 @@ export function FormField() {
     </Card>
   );
 }
-
-
-
-
-
-
-
-// import { Button } from "@/components/ui/button";
-// import {
-//   Card,
-//   CardContent,
-//   CardDescription,
-//   CardFooter,
-//   CardHeader,
-//   CardTitle,
-// } from "@/components/ui/card";
-// import { Input } from "@/components/ui/input";
-// import { Label } from "@/components/ui/label";
-// import { ShineBorder } from "@/components/magicui/shine-border";
-
-// export function FormField() {
-//   return (
-//     <Card className="relative overflow-hidden md:w-[42vw] max-md:w-[78vw]">
-//       {/* <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} className='max-md:hidden'/> */}
-//       {/* <ShineBorder shineColor={["#fffae6"]} className='max-md:hidden' /> */}
-//       <CardHeader>
-//         <CardTitle>Login</CardTitle>
-//         <CardDescription>
-//           Enter your credentials to access your account
-//         </CardDescription>
-//       </CardHeader>
-//       <CardContent>
-//         <form>
-//           <div className="grid gap-4">
-//             <div className="grid gap-2">
-//               <Label htmlFor="email">Email</Label>
-//               <Input id="email" type="email" placeholder="name@example.com" />
-//             </div>
-//             <div className="grid gap-2">
-//               <Label htmlFor="password">Password</Label>
-//               <Input id="password" type="password" />
-//             </div>
-//           </div>
-//         </form>
-//       </CardContent>
-//       <CardFooter>
-//         <Button className="w-full">Sign In</Button>
-//       </CardFooter>
-//     </Card>
-//   );
-// }
