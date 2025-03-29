@@ -10,6 +10,8 @@ import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import ScrollDownButton from "./ScrollDownButton";
 import WarningForMobile from "./WarningForMobile";
 
+import { Analytics } from "@vercel/analytics/react"
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,6 +42,7 @@ export default function RootLayout({ children }) {
           <HireSection />
         </nav>
         {children}
+        <Analytics />
       </body>
     </html>
   );
