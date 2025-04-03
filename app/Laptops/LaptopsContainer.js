@@ -6,6 +6,8 @@ import GameIconRight from '../GameIconRight';
 import Link from 'next/link';
 import ShineBorder from '@/components/magicui/shine-border';
 
+import { Ripple } from "@/components/magicui/ripple";
+
 
 const LaptopsContainer = () => {
   return (
@@ -19,7 +21,7 @@ const LaptopsContainer = () => {
         <div className='flex justify-center items-center 
                           max-sm:block max-md:block'>
           <Link className='mr-5' href="https://my-netflix-clone-two.vercel.app/">
-            <Image className='hover:scale-105 transition ' src='/Laptops/Netflix.png' height={1700} width={1700} alt='Netflix' />
+            <Image className='hover:scale-105 transition' src='/Laptops/Netflix.png' height={1700} width={1700} alt='Netflix' />
           </Link>
 
           <div className='flex flex-col'>

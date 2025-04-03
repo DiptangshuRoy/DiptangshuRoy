@@ -22,7 +22,6 @@ import Script from 'next/script';
 
 import { cn } from "@/lib/utils";
 import { InteractiveGridPattern } from "@/components/magicui/interactive-grid-pattern";
-import { ParticlesDemo } from './ParticlesDemo';
 import { TerminalDemo } from './TerminalDemo';
 import { FileTreeDemo } from './FileTreeDemo';
 import GoDownButton from './GoDownButton';
