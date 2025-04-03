@@ -17,7 +17,7 @@ const MyProcessOfWork = () => {
       <div className="flex flex-wrap gap-7 items-center text-4xl leading-none text-center text-white ml-20 mt-12 mb-14
                       max-sm:ml-5 max-md:ml-5 max-sm:text-2xl max-md:text-2xl max-md:mb-1">
         <h2 id="MyProcessOfWork" className="self-stretch my-auto max-md:max-w-full">
-          <TextAnimate animation="blurIn" >
+          <TextAnimate animation="blurIn" className=''>
             My Process Of Work
           </TextAnimate>
         </h2>

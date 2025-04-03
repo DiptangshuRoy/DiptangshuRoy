@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -13,6 +12,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { ConfettiButton } from "@/components/magicui/confetti";
 
 export function FormField() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -77,7 +77,7 @@ export function FormField() {
   return (
     <Card className="relative overflow-hidden text-white w-[43vw] max-md:w-[85vw]">
       <CardHeader>
-        <CardTitle>Contact Me</CardTitle>
+        {/* <CardTitle>Contact Me</CardTitle> */}
         <CardDescription>Fill out the form and I will get back to you</CardDescription>
       </CardHeader>
       <CardContent>
@@ -127,13 +127,15 @@ export function FormField() {
           {successMessage && <p className="text-green-500 text-sm">{successMessage}</p>}
 
           {/* Submit Button */}
-          <Button
-            type="submit"
-            disabled={isSubmitting}
-            className="w-full bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:opacity-80"
-          >
-            {isSubmitting ? "Submitting..." : "Submit"}
-          </Button>
+          {/* <ConfettiButton> */}
+            <Button
+              type="submit"
+              disabled={isSubmitting}
+              className="w-full bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:opacity-80"
+            >
+              {isSubmitting ? "Submitting..." : "Submit"}
+            </Button>
+          {/* </ConfettiButton> */}
         </form>
       </CardContent>
       <CardFooter></CardFooter>
