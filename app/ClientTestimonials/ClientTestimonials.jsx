@@ -1,11 +1,17 @@
 import React from 'react'
+import { TextAnimate } from "@/components/magicui/text-animate";
+import { Ubuntu } from "next/font/google";
+
+const ubuntu = Ubuntu({ subsets: ["latin"], weight: ["300", "500", "700"] }); 
 
 const ClientTestimonials = () => {
   return (
     <section className="flex flex-wrap gap-7 items-center text-4xl leading-none text-center text-white 
                         max-sm:text-2xl max-md:text-2xl max-sm:mx-5 max-md:mx-5 max-sm:mt-10 max-md:mt-10 max-sm:mb-5 max-md:mb-5">
       <h2 className="self-stretch my-auto">
-        Client Testimonials
+            <TextAnimate animation="slideUp" by="word" className={ubuntu.className}>
+                    Client Testimonials
+                  </TextAnimate>
       </h2>
       <img
         loading="lazy"

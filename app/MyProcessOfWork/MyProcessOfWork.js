@@ -9,6 +9,12 @@ import { TextAnimate } from "@/components/magicui/text-animate";
 import { SparklesText } from "@/components/magicui/sparkles-text";
 import { AuroraText } from "@/components/magicui/aurora-text";
 
+import { Ubuntu } from "next/font/google";
+import { Proza_Libre } from "next/font/google";
+
+const ubuntu = Ubuntu({ subsets: ["latin"], weight: ["300", "500", "700"] });
+const proza_libre = Proza_Libre({ subsets: ["latin"], weight: ["400", "500", "700"] });
+
 const MyProcessOfWork = () => {
   return (
     <>
@@ -17,7 +23,7 @@ const MyProcessOfWork = () => {
       <div className="flex flex-wrap gap-7 items-center text-4xl leading-none text-center text-white ml-20 mt-12 mb-14
                       max-sm:ml-5 max-md:ml-5 max-sm:text-2xl max-md:text-2xl max-md:mb-1">
         <h2 id="MyProcessOfWork" className="self-stretch my-auto max-md:max-w-full">
-          <TextAnimate animation="blurIn" className=''>
+          <TextAnimate animation="slideUp" by="word" className={ubuntu.className}>
             My Process Of Work
           </TextAnimate>
         </h2>
