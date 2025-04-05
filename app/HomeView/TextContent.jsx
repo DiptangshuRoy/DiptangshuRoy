@@ -25,7 +25,7 @@ function TextContent() {
 
           <div className="hidden xl:block">
             <LineShadowText className="italic" shadowColor={shadowColor}>
-              I am a Fullstack Developer
+              I do Fullstack Development
             </LineShadowText>
           </div>
 

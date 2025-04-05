@@ -28,6 +28,7 @@ import GoDownButton from './GoDownButton';
 import { FormField } from './FormField';
 import Carousel from './CarouselForMobile';
 import CarouselForMobile from './CarouselForMobile';
+import { date } from 'zod';
 
 
 export default function Home() {
@@ -109,7 +110,7 @@ export default function Home() {
       </div>
 
       {/* MAKE THIS RESPONSIVE */}
-      <footer className='flex justify-around items-center mb-5 
+      <footer className='flex justify-around items-center mb-2
                           max-sm:flex-col-reverse max-md:flex-col-reverse max-sm:mt-10 max-md:mt-10 '>
         <div className='max-sm:hidden max-md:hidden'>
           <LogoWithNameForFooter />
@@ -119,11 +120,14 @@ export default function Home() {
           <GoToTop />
         </div>
       </footer>
+      <div className='flex justify-center items-center'>
+        <span className='text-sm text-gray-500 ml-[119px] max-md:hidden'>Diptangshu Roy | since 2022-{new Date().getFullYear()}</span>
+      </div>
 
-      <div className='my-3 flex justify-center items-center gap-7
+      <div className='mt-5 mb-2 ml-2
                       md:hidden'>
         <LogoWithNameInFooterForMobile />
-        <GoToTop />
+        {/* <GoToTop /> */}
       </div>
     </>
   );
