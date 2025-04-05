@@ -14,7 +14,7 @@ import { Lens } from "@/components/magicui/lens";
 import Link from "next/link";
 import { Safari } from "@/components/magicui/safari";
 
-export function React_img() {
+export function MagicUI() {
   return (
     <Card className="relative max-w-[45vw] shadow-none max-md:max-w-[90vw]">
       <CardHeader>
@@ -27,18 +27,18 @@ export function React_img() {
           <Safari
             url="magicui.design"
             className="size-full"
-            imageSrc="WebsitePictures/React2.png"
+            imageSrc="WebsitePictures/MagicUI.png"
           />
         </Lens>
       </CardHeader>
       <CardContent>
-        <CardTitle className="text-2xl">React</CardTitle>
+        <CardTitle className="text-2xl">Magic UI</CardTitle>
         <CardDescription>
-          Well known JavaScript library for building user interfaces, especially single-page applications (SPAs). It allows developers to create reusable UI components and manage the state of their applications efficiently.
+          UI library that provides a set of customizable and reusable components for building user interfaces in web applications. It is designed to be flexible and easy to use, allowing developers to create beautiful and responsive UIs quickly.
         </CardDescription>
       </CardContent>
       <CardFooter className="space-x-4">
-        <Link href="https://react.dev/" target="_blank" className="rounded-lg bg-orange-500">
+        <Link href="https://magicui.design" target="_blank" className="rounded-lg bg-orange-500">
           <Button>Let&apos;s go</Button>
         </Link>
       </CardFooter>

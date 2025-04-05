@@ -1,90 +1,61 @@
-import React from 'react'
+"use client";
+
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Nextjs } from './Nextjs';
 import { React_img } from './React_img';
+import { MagicUI } from './MagicUI';
+import { ShadcnUI } from './ShadcnUI';
 
-
-export const metadata = {
-  title: "Tech Resources I Utilize Daily",
-  description: "Tech resources of various technologies",
-};
+// export const metadata = {
+//   title: "Tech Resources I Utilize Daily",
+//   description: "Tech resources of various technologies",
+// };
 
 const page = () => {
+  const [showAnnouncement, setShowAnnouncement] = useState(true);
+
   return (
     <>
-      <section className='flex flex-col gap-7 mt-10'>
-<div className='flex justify-center items-center gap-10 max-md:flex-col'>
-<Nextjs />
-<React_img />
-{/* <Nextjs /> */}
-</div>
+      {showAnnouncement && (
+        <div className="flex items-center justify-between bg-orange-200 px-4 py-1 text-gray-900 max-md:hidden">
+          <span> </span>
 
-        <div className='flex bg-slate-800 mx-10 rounded-md py-5 px-10 transition hover:scale-[1.02]'>
-          <div className='flex flex-col justify-around'>
-            <Link className='flex w-fit justify-center items-center gap-1 transition hover:scale-110' href='https://nextjs.org/docs' target='_blank'>
-              <h2 className=''>Next.js Docs</h2>
-              <Image height={12} width={12} src='/RedirectIcon.svg' />
-            </Link>
-            <span className='transition hover:scale-[1.01]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur cumque in esse nemo cupiditate, reiciendis amet fugit illo adipisci. Cum minus totam aspernatur rem ad, magnam repellendus doloremque ut ea?</span>
-          </div>
+          <p className="text-center font-medium">
+            This page is under continuous development.
+            <span className='hover:underline cursor-default'>page will get ready very soon.</span>
+          </p>
 
-          <div className='flex flex-col items-center justify-center'>
-            {/* <div className='absolute'>
-              <Image height={15} width={15} src='/RedirectIcon.svg' />
-            </div> */}
-            <Link href='https://nextjs.org/docs' target='_blank'>
-              <Image className='transition hover:scale-[1.05]' height={300} width={300} src='/MyPhoto.png' />
-            </Link>
-          </div>
+          <button
+            type="button"
+            aria-label="Dismiss"
+            onClick={() => setShowAnnouncement(false)}
+            className="rounded-full border border-gray-300 bg-white p-1.5 shadow-sm transition-colors hover:bg-gray-50"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="size-5"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          </button>
         </div>
+      )}
 
-        <div className='flex bg-slate-800 mx-10 rounded-md py-5 px-10 transition hover:scale-[1.02]'>
-          <div className='flex flex-col justify-around'>
-            <Link className='flex w-fit' href='https://nextjs.org/docs' target='_blank'>
-              <h2 className=''>Next.js Docs</h2>
-            </Link>
-            <span className=''>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur cumque in esse nemo cupiditate, reiciendis amet fugit illo adipisci. Cum minus totam aspernatur rem ad, magnam repellendus doloremque ut ea?</span>
-          </div>
-
-          <div className=''>
-            <Link href='https://nextjs.org/docs' target='_blank'>
-              <Image height={300} width={300} src='/MyPhoto.png' />
-            </Link>
-          </div>
+      <section className='flex flex-col gap-7 mt-3'>
+        <div className='flex justify-center items-center gap-10 max-md:flex-col'>
+          <Nextjs />
+          <React_img />
         </div>
-
-        <div className='flex bg-slate-800 mx-10 rounded-md py-5 px-10 transition hover:scale-[1.02]'>
-          <div className='flex flex-col justify-around'>
-            <Link className='flex w-fit' href='https://nextjs.org/docs' target='_blank'>
-              <h2 className=''>Next.js Docs</h2>
-            </Link>
-            <span className=''>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur cumque in esse nemo cupiditate, reiciendis amet fugit illo adipisci. Cum minus totam aspernatur rem ad, magnam repellendus doloremque ut ea?</span>
-          </div>
-
-          <div className=''>
-            <Link href='https://nextjs.org/docs' target='_blank'>
-              <Image height={300} width={300} src='/MyPhoto.png' />
-            </Link>
-          </div>
+        <div className='flex justify-center items-center gap-10 max-md:flex-col'>
+          <MagicUI />
+          <ShadcnUI />
         </div>
-
-        <div className='flex bg-slate-800 mx-10 rounded-md py-5 px-10 transition hover:scale-[1.02]'>
-          <div className='flex flex-col justify-around'>
-            <Link className='flex w-fit' href='https://nextjs.org/docs' target='_blank'>
-              <h2 className=''>Next.js Docs</h2>
-            </Link>
-            <span className=''>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur cumque in esse nemo cupiditate, reiciendis amet fugit illo adipisci. Cum minus totam aspernatur rem ad, magnam repellendus doloremque ut ea?</span>
-          </div>
-
-          <div className=''>
-            <Link href='https://nextjs.org/docs' target='_blank'>
-              <Image height={300} width={300} src='/MyPhoto.png' />
-            </Link>
-          </div>
-        </div>
-
-
       </section >
     </>
   )

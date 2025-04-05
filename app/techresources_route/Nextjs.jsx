@@ -11,6 +11,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Lens } from "@/components/magicui/lens";
+import Link from "next/link";
+import { Safari } from "@/components/magicui/safari";
 
 export function Nextjs() {
   return (
@@ -22,24 +24,23 @@ export function Nextjs() {
           isStatic={false}
           ariaLabel="Zoom Area"
         >
-          <img
-            src="WebsitePictures/Next.js.png"
-            alt="image placeholder"
-            width={900}
-            height={900}
+          <Safari
+            url="magicui.design"
+            className="size-full"
+            imageSrc="WebsitePictures/Next.js.png"
           />
         </Lens>
       </CardHeader>
       <CardContent>
-        <CardTitle className="text-2xl">Your next camp</CardTitle>
+        <CardTitle className="text-2xl">Next js</CardTitle>
         <CardDescription>
-          See our latest and best camp destinations all across the five
-          continents of the globe.
+          Popular React framework for building server-side rendered (SSR) and static web applications.
         </CardDescription>
       </CardContent>
       <CardFooter className="space-x-4">
-        <Button>Let&apos;s go</Button>
-        <Button variant="secondary">Another time</Button>
+        <Link href="https://nextjs.org/" target="_blank" className="rounded-lg bg-orange-500">
+          <Button>Let&apos;s go</Button>
+        </Link>
       </CardFooter>
     </Card>
   );
