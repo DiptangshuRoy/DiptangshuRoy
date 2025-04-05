@@ -58,17 +58,17 @@ export default function ScrollDownButton() {
   return (
     <button
       onClick={handleScroll}
-      className={`fixed bottom-[10px] right-8 text-stone-300 text-lg font-semibold shadow-lg transition-all duration-300 hover:scale-110 z-40 max-md:right-1 max-md:bottom-2 max-md:scale-75
+      className={`fixed bottom-[10px] right-8 text-stone-300 text-lg font-semibold transition-all duration-300 hover:scale-110 z-40 max-md:right-1 max-md:bottom-2 max-md:scale-75
         ${isVisible ? "opacity-100" : "opacity-0 pointer-events-none"} 
         outline-none focus:ring-0 focus:outline-none`}
-    >
+        >
       <lord-icon
         src="https://cdn.lordicon.com/xcrjfuzb.json"
         trigger="loop"
         delay="3500"
         colors="primary:#fae6d1"
         style={{ width: 40, height: 40 }}
-      ></lord-icon>
+        ></lord-icon>
     </button>
   );
 }

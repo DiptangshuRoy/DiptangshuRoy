@@ -44,6 +44,7 @@ export default function RootLayout({ children }) {
         <ScrollProgress className="" />
         {/* <WarningForMobile /> */}
         <nav className='flex justify-around mt-5 mb-4 max-md:mt-2 bg-neutral-900'>
+
           <h1>
             <LogoWithName />
           </h1>

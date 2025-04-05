@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link';
 import { MagicCard } from "@/components/magicui/magic-card";
-import {FormField} from '../FormField';
+import { FormField } from '../FormField';
 import { TextAnimate } from "@/components/magicui/text-animate";
 import { Ubuntu } from "next/font/google";
 
@@ -12,13 +12,13 @@ const HaveIdeaAboutProject = () => {
     <>
       <section id='HaveIdeaAboutProject' className='flex flex-col gap-5 max-md:gap-0
                                                     max-md:mx-5 max-mb:mx-5'>
-        <div className="flex gap-7 max-md:gap-1 flex-wrap items-center leading-none text-white
+        <div className="flex gap-6 flex-wrap items-center leading-none text-white
                         max-sm:mb-5 max-mb:mb-5 max-sm:mt-7 max-mb:mt-7 ">
           <h2 className="text-4xl self-stretch my-auto 
                           max-md:max-w-full max-sm:text-xl max-md:text-2xl">
-                <TextAnimate animation="slideUp" by="word" className={ubuntu.className}>
-                        Have Idea About Project ?
-                      </TextAnimate>
+            <TextAnimate animation="slideUp" by="word" className={ubuntu.className}>
+              Have Idea About Project!
+            </TextAnimate>
           </h2>
           <img
             loading="lazy"

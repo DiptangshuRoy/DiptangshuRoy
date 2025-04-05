@@ -26,13 +26,15 @@ import { TerminalDemo } from './TerminalDemo';
 import { FileTreeDemo } from './FileTreeDemo';
 import GoDownButton from './GoDownButton';
 import { FormField } from './FormField';
+import Carousel from './CarouselForMobile';
+import CarouselForMobile from './CarouselForMobile';
 
 
 export default function Home() {
   return (
     <>
       <Script src="https://cdn.lordicon.com/lordicon.js"></Script>
-      
+
       <div className='absolute left-[2px] top-72 z-50 max-lg:hidden'>
         <FileTreeDemo />
       </div>
@@ -73,17 +75,29 @@ export default function Home() {
       <section className='mx-36 mt-12 mb-24 
                           max-sm:m-0 max-md:m-0'>
         <ClientTestimonials />
-        <div className='mt-14 mx-5
+        <div className='max-md:hidden'>
+          <div className='mt-14 mx-5
                         max-md:mt-0'>
-          <div className='flex justify-center items-center mb-7
+            <div className='flex justify-center items-center mb-7
                           max-sm:block max-md:block'>
-            <ClientTestimonialsCard2 />
-            <ClientTestimonialsCard1 />
-          </div>
-          <div className='flex justify-center items-center
+              <ClientTestimonialsCard2 />
+              <ClientTestimonialsCard1 />
+            </div>
+            <div className='flex justify-center items-center
                           max-md:block'>
-            <ClientTestimonialsCard3 />
-            <ClientTestimonialsCard4 />
+              <ClientTestimonialsCard3 />
+              <ClientTestimonialsCard4 />
+            </div>
+          </div>
+        </div>
+
+        <div className='hidden max-md:block mb-8'>
+          <CarouselForMobile />
+          <div className='w-full flex justify-center items-center gap-5 mt-1.5'>
+            <span className='p-1 bg-stone-600 rounded-full'></span>
+            <span className='p-1 bg-stone-600 rounded-full'></span>
+            <span className='p-1 bg-stone-600 rounded-full'></span>
+            <span className='p-1 bg-stone-600 rounded-full'></span>
           </div>
         </div>
       </section>
