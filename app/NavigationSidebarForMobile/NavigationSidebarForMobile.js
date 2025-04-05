@@ -99,7 +99,7 @@ const NavigationSidebarForMobile = () => {
           <div className=" bg-zinc-500 p-[0.1px]"></div>
           <div>
             <li>
-              <Link className=" flex float-right text-lg font-sans text-white" href="/#SendAMessage">
+              <Link className=" flex float-right text-lg font-sans text-white" href="/#HaveIdeaAboutProject">
                 Contact me
               </Link>
             </li>

@@ -19,7 +19,7 @@ function NavigationBar() {
           <NavigationItem key={index} text={item} />
         ))} */}
         <li><Link href="/#SomeFeaturedProjects">Projects</Link></li>
-        <li><Link href="/#SendAMessage">Contact me</Link></li>
+        <li><Link href="/#HaveIdeaAboutProject">Contact me</Link></li>
         <li><Link href="/techresources_route">Tech Resources</Link></li>
       </ul>
     </nav>
