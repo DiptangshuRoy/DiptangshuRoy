@@ -13,7 +13,7 @@ import { ShadcnUI } from './ShadcnUI';
 //   description: "Tech resources of various technologies",
 // };
 
-const page = () => {
+const Page = () => {     // <-- Fixed here
   const [showAnnouncement, setShowAnnouncement] = useState(true);
 
   return (
@@ -61,4 +61,4 @@ const page = () => {
   )
 }
 
-export default page;
+export default Page;   // <-- Export same
