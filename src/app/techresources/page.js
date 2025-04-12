@@ -19,10 +19,10 @@ const Page = () => {     // <-- Fixed here
   return (
     <>
       {showAnnouncement && (
-        <div className="flex items-center justify-between bg-orange-200 px-4 py-1 text-gray-900 max-md:hidden">
+        <div className="flex items-center justify-between bg-orange-200 px-4 py-1 text-gray-900 max-md:h-6 max-md:px-1 max-md:py-0">
           <span> </span>
 
-          <p className="text-center font-medium">
+          <p className="text-center font-medium max-md:text-xxs max-md:text-left">
             This page is under continuous development.
             <span className='hover:underline cursor-default'>page gets updated very soon.</span>
           </p>
@@ -31,7 +31,7 @@ const Page = () => {     // <-- Fixed here
             type="button"
             aria-label="Dismiss"
             onClick={() => setShowAnnouncement(false)}
-            className="rounded-full border border-gray-300 bg-white p-1.5 shadow-sm transition-colors hover:bg-gray-50"
+            className="rounded-full border border-gray-300 bg-white p-1.5 shadow-sm transition-colors hover:bg-gray-50 max-md:-scale-50"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

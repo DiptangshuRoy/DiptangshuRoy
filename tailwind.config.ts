@@ -9,6 +9,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize: {
+        'xxs': '9.5px', // 10px
+        'xxxs': '8px',   // 8px (use with caution)
+      },
       container: {
         center: true,
         padding: "2rem",
