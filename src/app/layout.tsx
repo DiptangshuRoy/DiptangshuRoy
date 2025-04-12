@@ -59,6 +59,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      {/* HYDRATION ERROR DOES NOT HAPPEN IN PRIVATE BROWSING MODE. SO, DON'T FIX IT ~~JUST CHILL */}
       <body className={cn("font-sans antialiased relative", inter.className)}>
         <ThemeProvider
           attribute="class"

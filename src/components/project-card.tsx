@@ -15,18 +15,12 @@ const Projects = [
     short:
       "/Laptops/macbook-Netflix.svg",
     features: [
-      "User Authentication with Appwrite",
-      "Effortlessly upload a variety of file types, including documents, images, videos, and audio,",
-      "Users can easily share their uploaded files with others,",
-      "Gain insights at a glance with a dynamic dashboard that showcases total and consumed storage",
+      "Built a fully responsive UI using HTML, CSS, and @media queries",
+      "Managed images efficiently, using techniques like object-fit to ensure consistent presentation of content across devices",
+      "Cloned the Netflix homepage layout, including the hero section, banner images, and movie thumbnails",
+      "Ensured basic SEO best practices such as using semantic HTML tags (like article, section, and header)",
     ],
-    technologies: [
-      "Next.js",
-      "Tailwind CSS",
-      "Appwrite",
-      "Clerk Auth",
-      "Lemon Squeezy",
-    ],
+    technologies: ["HTML", "CSS", "JavaScript", "Reusable utility classes"],
 
     link: "https://my-netflix-clone-two.vercel.app/",
     sourceCode: "https://github.com/DiptangshuRoy/my-Netflix-clone",
@@ -38,19 +32,13 @@ const Projects = [
     short:
       "/Laptops/macbook-PassOP.svg",
     features: [
-      "Smart output handling with Success & Error states",
-      "Flexible pricing with Free & Pro plans",
-      "Customizable experience with 5 VSCode themes",
-      "Community-driven code sharing system",
-      "Personal profile with execution history tracking",
+      "Implemented reusable components for input fields, password entries, and modals",
+      "Integrated copy to clipboard functionality for passwords with a single click",
+      "Added feedback using toast notifications (e.g., “Password Copied”)",
+      "Displayed in a secure, scrollable list with hidden password toggle",
+      "Used React Context API to manage password state and UI logic",
     ],
-    technologies: [
-      "Next.js",
-      "Tailwind CSS",
-      "Convex",
-      "Clerk Auth",
-      "Lemon Squeezy",
-    ],
+    technologies: ["HTML", "CSS", "JavaScript", "Next.js", "React.js", "Tailwind", "LocalStorage", "React Context API", "Toastify", "MongoDB"],
 
     link: "https://password-manager-with-localstorage.vercel.app/",
     sourceCode: "https://github.com/DiptangshuRoy/Password-Manager-with-localstorage",
@@ -61,8 +49,13 @@ const Projects = [
     description:
       "Weather app with a responsive design and smooth animations",
     short: "/Laptops/macbook-Weather.svg",
-    features: ["Fetches weather info from API", "Responsive", "Animated interface"],
-    technologies: ["HTML", "CSS", "JavaScript", "OpenWeather API"],
+    features: [
+      "Utilized OpenWeatherMap API to fetch real-time weather data",
+      "Detects user’s current location using the Geolocation API and fetches weather accordingly on load",
+      "Used REST API to fetch data securely using an API key stored in .env.local",
+      "Followed best practices for modular, responsive design, readable code",
+    ],
+    technologies: ["HTML", "CSS", "JavaScript", "Next.js", "React.js", "Tailwind", "OpenWeather API"],
 
     link: "https://weather-omega-liard.vercel.app/",
     sourceCode: "https://github.com/DiptangshuRoy/weather",
@@ -73,7 +66,12 @@ const Projects = [
     description:
       "Your own task manager with a responsive design and smooth animations",
     short: "/Laptops/macbook-iTask.svg",
-    features: ["Responsive", "Animate on scroll"],
+    features: [
+      "Supports CRUD operations with real-time UI updates and persistent data storage",
+      "Tasks can be marked as completed",
+      "Styled with Tailwind CSS or CSS Modules for a responsive and clean UI",
+      "Tasks are saved using LocalStorage",
+    ],
     technologies: ["HTML", "CSS", "JavaScript", "AOS library"],
 
     link: "https://to-do-list-app-gilt-two.vercel.app/",
@@ -85,7 +83,10 @@ const Projects = [
     description:
       "Twitter feed with a responsive design and smooth animations",
     short: "/Laptops/macbook-Twitter.svg",
-    features: ["Responsive", "Animate on scroll"],
+    features: [
+      "Clean UI, and responsive design",
+      "My first ever clean project"
+    ],
     technologies: ["HTML", "CSS", "JavaScript", "AOS library"],
 
     link: "https://my-twitter-clone-mu.vercel.app/",
@@ -110,7 +111,7 @@ export default function ProjectCard() {
               playsInline
               className="rounded-3xl"
             ></video> */}
-            <Image src={project.short} height={800} width={800} alt="preview image" className="hover:scale-105 transition cursor-pointer"/>
+            <Image src={project.short} height={800} width={800} alt="preview image" className="hover:scale-105 transition cursor-pointer" />
           </section>
 
           <section className="flex gap-4 pt-3 lg:w-1/2">
