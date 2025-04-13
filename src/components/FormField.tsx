@@ -125,7 +125,7 @@ export default function FormField() {
           value={formData.name}
           onChange={handleChange}
           placeholder="Enter your name"
-          className="border p-2 w-full"
+          className="border p-2 w-full rounded-md"
         />
         {errors.name && (
           <p className="text-red-500 text-sm mt-1">{errors.name}</p>
@@ -141,7 +141,7 @@ export default function FormField() {
           value={formData.email}
           onChange={handleChange}
           placeholder="Enter your email"
-          className="border p-2 w-full"
+          className="border p-2 w-full rounded-md"
         />
         {errors.email && (
           <p className="text-red-500 text-sm mt-1">{errors.email}</p>
@@ -156,8 +156,8 @@ export default function FormField() {
           name="message"
           value={formData.message}
           onChange={handleChange}
-          placeholder="Enter your message"
-          className="border p-2 w-full"
+          placeholder="Enter your message.."
+          className="border p-2 w-full rounded-md"
         />
         {errors.message && (
           <p className="text-red-500 text-sm mt-1">{errors.message}</p>

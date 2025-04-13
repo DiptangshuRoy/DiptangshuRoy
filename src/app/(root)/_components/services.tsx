@@ -146,7 +146,7 @@ const features = [
     name: "Services",
     description:
       "developing professional responsive websites, Landing pages, and web applications.",
-    href: "#",
+    href: "#projects",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",
     background: (
@@ -158,7 +158,7 @@ const features = [
     name: "Converting",
     description:
       "Converting design files (Figma, XD, Sketch, and PSD) into pixel-perfect.",
-    href: "#",
+    href: "#projects",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",
     background: (
@@ -170,7 +170,7 @@ const features = [
     name: "Clean Code",
     description:
       "Writing maintainable, efficient, and scalable code following best practices.",
-    href: "#",
+    href: "#projects",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",
     background: (
