@@ -18,6 +18,7 @@ import ProjectCard from "@/components/project-card";
 import Testimonials from "./_components/testimonials";
 // import BlogCard from "../blog/_components/blog-card";
 import FormField from "@/components/FormField";
+import { SparklesText } from "@/components/magicui/sparkles-text";
 
 export default function Page() {
   const { theme } = useTheme();
@@ -169,8 +170,11 @@ export default function Page() {
 
       {/* Recent Blog */}
       <section className="container py-12 md:py-24">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-12">
-          Have idea about project?
+        <h2 className="mb-12">
+          {/* Have idea about project? */}
+          <SparklesText className="text-3xl font-bold tracking-tighter sm:text-4xl ">
+            Have idea about project?
+          </SparklesText>
         </h2>
         <FormField />
         {/* <div className="flex gap-5 flex-wrap">

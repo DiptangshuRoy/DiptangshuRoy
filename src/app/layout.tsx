@@ -7,6 +7,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
 import ContactFormModal from "@/components/contact-form-modal";
 import { Toaster } from "@/components/ui/toaster";
+import { ScrollProgress } from "@/components/magicui/scroll-progress";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -68,6 +69,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
+          <ScrollProgress /> {/* Scroll Progress Bar */}
           {children} {/* Main Page Content */}
           <Footer />
           <ContactFormModal />

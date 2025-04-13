@@ -142,9 +142,9 @@ export default function ContactFormModal() {
           </Description>
         </DialogHeader>
 
-        <form onSubmit={handleSubmit} className="space-y-6 mt-4">
+        <form onSubmit={handleSubmit} className="space-y-6 mt-4 relative">
           {/* Name Field */}
-          <div className="relative">
+          <div>
             <Input
               type="text"
               name="name"
@@ -156,7 +156,7 @@ export default function ContactFormModal() {
               }`}
             />
             <User
-              className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground"
+              className="absolute left-3 top-5 transform -translate-y-1/2 text-muted-foreground"
               size={18}
             />
             {errors.name && (
@@ -165,7 +165,7 @@ export default function ContactFormModal() {
           </div>
 
           {/* Email Field */}
-          <div className="relative">
+          <div className="">
             <Input
               type="text"
               name="email"
@@ -177,7 +177,8 @@ export default function ContactFormModal() {
               }`}
             />
             <Mail
-              className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground"
+              className={`absolute left-3 transform -translate-y-1/2 text-muted-foreground ${
+                errors.email ? "top-[100px]" : "top-20"}`}
               size={18}
             />
             {errors.email && (

@@ -24,7 +24,7 @@ const Page = () => {     // <-- Fixed here
 
           <p className="text-center font-medium max-md:text-xxs max-md:text-left">
             This page is under continuous development.
-            <span className='hover:underline cursor-default'>page gets updated very soon.</span>
+            <span className='underline cursor-default'>page gets updated very soon.</span>
           </p>
 
           <button

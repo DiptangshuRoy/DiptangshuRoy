@@ -72,7 +72,7 @@ const Projects = [
       "Styled with Tailwind CSS or CSS Modules for a responsive and clean UI",
       "Tasks are saved using LocalStorage",
     ],
-    technologies: ["HTML", "CSS", "JavaScript", "AOS library"],
+    technologies: ["HTML", "CSS", "JavaScript", "Tailwind", "Bootstrap", "Localstorage"],
 
     link: "https://to-do-list-app-gilt-two.vercel.app/",
     sourceCode: "https://github.com/DiptangshuRoy/To-do-list-app",
@@ -87,8 +87,7 @@ const Projects = [
       "Clean UI, and responsive design",
       "My first ever clean project"
     ],
-    technologies: ["HTML", "CSS", "JavaScript", "AOS library"],
-
+    technologies: ["HTML", "CSS", "JavaScript", "Tailwind"],
     link: "https://my-twitter-clone-mu.vercel.app/",
     sourceCode: "https://github.com/DiptangshuRoy/my-Twitter-clone",
   },
