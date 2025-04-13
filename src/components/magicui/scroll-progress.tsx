@@ -3,6 +3,12 @@
 import { cn } from "@/lib/utils";
 import { motion, MotionProps, useScroll } from "motion/react";
 import React from "react";
+
+// DONT REMOVE THE COMMENT BELOW
+// This is a workaround for a bug in motion/react where it doesn't
+// recognize the type of the ref when using forwardRef with TypeScript.
+
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface ScrollProgressProps
   extends Omit<React.HTMLAttributes<HTMLElement>, keyof MotionProps> {}
 
