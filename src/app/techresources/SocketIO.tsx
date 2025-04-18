@@ -14,7 +14,7 @@ import { Lens } from "@/components/magicui/lens";
 import Link from "next/link";
 import { Safari } from "@/components/magicui/safari";
 
-export function Nextjs() {
+export function SocketIO() {
   return (
     <Card className="relative max-w-[45vw] shadow-none max-md:max-w-[90vw]">
       <CardHeader>
@@ -25,20 +25,20 @@ export function Nextjs() {
           ariaLabel="Zoom Area"
         >
           <Safari
-            url="magicui.design"
+            url="socket.io"
             className="size-full"
-            imageSrc="WebsitePictures/Next.js.png"
+            imageSrc="WebsitePictures/SocketIO.png"
           />
         </Lens>
       </CardHeader>
       <CardContent>
-        <CardTitle className="text-2xl">Next js</CardTitle>
+        <CardTitle className="text-2xl">Socket.IO</CardTitle>
         <CardDescription>
           Popular React framework for building server-side rendered (SSR) and static web applications.
         </CardDescription>
       </CardContent>
       <CardFooter className="space-x-4">
-        <Link href="https://nextjs.org/" target="_blank" className="rounded-lg bg-orange-500">
+        <Link href="https://socket.io/" target="_blank" className="rounded-lg bg-orange-500">
           <Button>Let&apos;s go</Button>
         </Link>
       </CardFooter>

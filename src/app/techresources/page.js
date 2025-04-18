@@ -7,6 +7,16 @@ import { Nextjs } from './Nextjs';
 import { React_img } from './React_img';
 import { MagicUI } from './MagicUI';
 import { ShadcnUI } from './ShadcnUI';
+import { MDN } from './MDN';
+import { Clerk } from './Clerk'
+import { Auth } from './Auth';
+import { SocketIO } from './SocketIO';
+import { Npm } from './Npm';
+import { Mongoose } from './Mongoose';
+import { Redux } from './Redux';
+import { WebRTC } from './WebRTC';
+import { Pug } from './Pug';
+import { Tailwind } from './Tailwind';
 
 // export const metadata = {
 //   title: "Tech Resources I Utilize Daily",
@@ -55,6 +65,26 @@ const Page = () => {     // <-- Fixed here
         <div className='flex justify-center items-center gap-10 max-md:flex-col'>
           <MagicUI />
           <ShadcnUI />
+        </div>
+        <div className='flex justify-center items-center gap-10 max-md:flex-col'>
+          <MDN />
+          <Clerk />
+        </div>
+        <div className='flex justify-center items-center gap-10 max-md:flex-col'>
+          <Auth />
+          <Redux />
+        </div>
+        <div className='flex justify-center items-center gap-10 max-md:flex-col'>
+          <Npm />
+          <SocketIO />
+        </div>
+        <div className='flex justify-center items-center gap-10 max-md:flex-col'>
+          <WebRTC />
+          <Mongoose />
+        </div>
+        <div className='flex justify-center items-center gap-10 max-md:flex-col'>
+          <Pug />
+          <Tailwind />
         </div>
       </section >
     </>

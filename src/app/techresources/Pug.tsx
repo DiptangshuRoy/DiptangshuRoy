@@ -14,7 +14,7 @@ import { Lens } from "@/components/magicui/lens";
 import Link from "next/link";
 import { Safari } from "@/components/magicui/safari";
 
-export function ShadcnUI() {
+export function Pug() {
   return (
     <Card className="relative max-w-[45vw] shadow-none max-md:max-w-[90vw]">
       <CardHeader>
@@ -25,20 +25,20 @@ export function ShadcnUI() {
           ariaLabel="Zoom Area"
         >
           <Safari
-            url="magicui.design"
+            url="pugjs.org"
             className="size-full"
-            imageSrc="WebsitePictures/ShadcnUI.png"
+            imageSrc="WebsitePictures/Pug.png"
           />
         </Lens>
       </CardHeader>
       <CardContent>
-        <CardTitle className="text-2xl">Shadcn UI</CardTitle>
+        <CardTitle className="text-2xl">Pug</CardTitle>
         <CardDescription>
-          Another UI library that provides a set of customizable and reusable components for building user interfaces in web applications.
+          Popular React framework for building server-side rendered (SSR) and static web applications.
         </CardDescription>
       </CardContent>
       <CardFooter className="space-x-4">
-        <Link href="https://ui.shadcn.com/" target="_blank" className="rounded-lg bg-orange-500">
+        <Link href="https://pugjs.org/api/getting-started.html" target="_blank" className="rounded-lg bg-orange-500">
           <Button>Let&apos;s go</Button>
         </Link>
       </CardFooter>
