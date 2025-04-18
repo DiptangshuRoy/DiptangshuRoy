@@ -27,7 +27,7 @@ export function Npm() {
           <Safari
             url="npmjs.com"
             className="size-full"
-            imageSrc="WebsitePictures/Npm.png"
+            imageSrc="WebsitePictures/NPM_img.png"
           />
         </Lens>
       </CardHeader>
