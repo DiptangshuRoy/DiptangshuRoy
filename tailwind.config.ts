@@ -13,6 +13,12 @@ export default {
         'xxs': '9.5px', // 10px
         'xxxs': '8px',   // 8px (use with caution)
       },
+      scale: {
+        '110': '1.10',
+        '115': '1.15',
+        '120': '1.20',
+        '125': '1.25',
+      },
       container: {
         center: true,
         padding: "2rem",

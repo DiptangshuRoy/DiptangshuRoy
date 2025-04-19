@@ -13,7 +13,7 @@ const Projects = [
     description:
       "Landing page of Netflix with a responsive design and smooth animations",
     short:
-      "/Laptops/macbook-Netflix.svg",
+      "/Laptops/Netflix.webp",
     features: [
       "Built a fully responsive UI using HTML, CSS, and @media queries",
       "Managed images efficiently, using techniques like object-fit to ensure consistent presentation of content across devices",
@@ -30,7 +30,7 @@ const Projects = [
     title: "PassOP/",
     description: "Your own password manager with secure storage system",
     short:
-      "/Laptops/macbook-PassOP.svg",
+      "/Laptops/PassOP.webp",
     features: [
       "Implemented reusable components for input fields, password entries, and modals",
       "Integrated copy to clipboard functionality for passwords with a single click",
@@ -48,7 +48,7 @@ const Projects = [
     title: "Weather App",
     description:
       "Weather app with a responsive design and smooth animations",
-    short: "/Laptops/macbook-Weather.svg",
+    short: "/Laptops/Weather.webp",
     features: [
       "Utilized OpenWeatherMap API to fetch real-time weather data",
       "Detects user’s current location using the Geolocation API and fetches weather accordingly on load",
@@ -65,7 +65,7 @@ const Projects = [
     title: "iTask",
     description:
       "Your own task manager with a responsive design and smooth animations",
-    short: "/Laptops/macbook-iTask.svg",
+    short: "/Laptops/iTask.webp",
     features: [
       "Supports CRUD operations with real-time UI updates and persistent data storage",
       "Tasks can be marked as completed",
@@ -82,7 +82,7 @@ const Projects = [
     title: "Twitter clone",
     description:
       "Twitter feed with a responsive design and smooth animations",
-    short: "/Laptops/macbook-Twitter.svg",
+    short: "/Laptops/Twitter.webp",
     features: [
       "Clean UI, and responsive design",
       "My first ever clean project"
@@ -110,7 +110,9 @@ export default function ProjectCard() {
               playsInline
               className="rounded-3xl"
             ></video> */}
-            <Image src={project.short} height={800} width={800} alt="preview image" className="hover:scale-105 transition cursor-pointer" />
+            <Link href={project.link} target="_blank" rel="noopener noreferrer">
+              <Image src={project.short} height={800} width={800} alt="preview image" className="scale-110 hover:scale-115 transition cursor-pointer" />
+            </Link>
           </section>
 
           <section className="flex gap-4 pt-3 lg:w-1/2">
