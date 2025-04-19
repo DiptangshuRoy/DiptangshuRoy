@@ -13,6 +13,7 @@ import {
 import { Lens } from "@/components/magicui/lens";
 import Link from "next/link";
 import { Safari } from "@/components/magicui/safari";
+import { ChevronRightIcon } from "lucide-react";
 
 export function Mongoose() {
   return (
@@ -34,12 +35,13 @@ export function Mongoose() {
       <CardContent>
         <CardTitle className="text-2xl">Mongoose</CardTitle>
         <CardDescription>
-          Popular React framework for building server-side rendered (SSR) and static web applications.
+          An elegant MongoDB object modeling tool for Node.js — simplify schema design, data validation, and powerful queries with ease.
         </CardDescription>
       </CardContent>
       <CardFooter className="space-x-4">
-        <Link href="https://mongoosejs.com/" target="_blank" className="rounded-lg bg-orange-500">
-          <Button>Let&apos;s go</Button>
+        <Link href="https://mongoosejs.com/" target="_blank" className="rounded-lg">
+          <Button className="group">Let&apos;s go<ChevronRightIcon className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
+          </Button>
         </Link>
       </CardFooter>
     </Card>

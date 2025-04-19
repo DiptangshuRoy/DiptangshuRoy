@@ -13,6 +13,7 @@ import {
 import { Lens } from "@/components/magicui/lens";
 import Link from "next/link";
 import { Safari } from "@/components/magicui/safari";
+import { ChevronRightIcon } from "lucide-react";
 
 export function Auth() {
   return (
@@ -34,12 +35,13 @@ export function Auth() {
       <CardContent>
         <CardTitle className="text-2xl">Auth js</CardTitle>
         <CardDescription>
-          Popular React framework for building server-side rendered (SSR) and static web applications.
+          A flexible and secure authentication library for Next.js — easily integrate OAuth, Email, or custom providers with minimal setup.
         </CardDescription>
       </CardContent>
       <CardFooter className="space-x-4">
-        <Link href="https://authjs.dev/" target="_blank" className="rounded-lg bg-orange-500">
-          <Button>Let&apos;s go</Button>
+        <Link href="https://authjs.dev/" target="_blank" className="rounded-lg ">
+          <Button className="group">Let&apos;s go<ChevronRightIcon className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
+          </Button>
         </Link>
       </CardFooter>
     </Card>

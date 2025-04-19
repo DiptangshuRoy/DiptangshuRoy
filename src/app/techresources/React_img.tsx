@@ -13,6 +13,7 @@ import {
 import { Lens } from "@/components/magicui/lens";
 import Link from "next/link";
 import { Safari } from "@/components/magicui/safari";
+import { ChevronRightIcon } from "lucide-react";
 
 export function React_img() {
   return (
@@ -34,12 +35,13 @@ export function React_img() {
       <CardContent>
         <CardTitle className="text-2xl">React</CardTitle>
         <CardDescription>
-          Well known JavaScript library for building user interfaces, especially single-page applications (SPAs). It allows developers to create reusable UI components and manage the state of their applications efficiently.
+          A declarative, efficient, and flexible JavaScript library for building user interfaces — create interactive UIs with reusable components.
         </CardDescription>
       </CardContent>
       <CardFooter className="space-x-4">
-        <Link href="https://react.dev/" target="_blank" className="rounded-lg bg-orange-500">
-          <Button>Let&apos;s go</Button>
+        <Link href="https://react.dev/" target="_blank" className="rounded-lg">
+          <Button className="group">Let&apos;s go<ChevronRightIcon className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
+          </Button>
         </Link>
       </CardFooter>
     </Card>

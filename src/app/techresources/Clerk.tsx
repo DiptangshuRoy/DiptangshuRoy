@@ -13,6 +13,7 @@ import {
 import { Lens } from "@/components/magicui/lens";
 import Link from "next/link";
 import { Safari } from "@/components/magicui/safari";
+import { ChevronRightIcon } from "lucide-react";
 
 export function Clerk() {
   return (
@@ -34,12 +35,13 @@ export function Clerk() {
       <CardContent>
         <CardTitle className="text-2xl">Clerk</CardTitle>
         <CardDescription>
-          Popular React framework for building server-side rendered (SSR) and static web applications.
+          An all-in-one authentication solution for modern apps — seamlessly manage sign-ups, logins, user profiles, and sessions with ease.
         </CardDescription>
       </CardContent>
       <CardFooter className="space-x-4">
-        <Link href="https://clerk.com/?utm_source=sponsorship&utm_medium=website&utm_campaign=authjs&utm_content=cta" target="_blank" className="rounded-lg bg-orange-500">
-          <Button>Let&apos;s go</Button>
+        <Link href="https://clerk.com/?utm_source=sponsorship&utm_medium=website&utm_campaign=authjs&utm_content=cta" target="_blank" className="rounded-lg">
+          <Button className="group">Let&apos;s go<ChevronRightIcon className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
+          </Button>
         </Link>
       </CardFooter>
     </Card>

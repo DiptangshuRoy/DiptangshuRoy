@@ -13,6 +13,7 @@ import {
 import { Lens } from "@/components/magicui/lens";
 import Link from "next/link";
 import { Safari } from "@/components/magicui/safari";
+import { ChevronRightIcon } from "lucide-react";
 
 export function SocketIO() {
   return (
@@ -34,12 +35,13 @@ export function SocketIO() {
       <CardContent>
         <CardTitle className="text-2xl">Socket.IO</CardTitle>
         <CardDescription>
-          Popular React framework for building server-side rendered (SSR) and static web applications.
+          A real-time communication library — build fast, bidirectional, event-based apps with WebSocket support and automatic fallbacks.
         </CardDescription>
       </CardContent>
       <CardFooter className="space-x-4">
-        <Link href="https://socket.io/" target="_blank" className="rounded-lg bg-orange-500">
-          <Button>Let&apos;s go</Button>
+        <Link href="https://socket.io/" target="_blank" className="rounded-lg">
+        <Button className="group">Let&apos;s go<ChevronRightIcon className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
+        </Button>
         </Link>
       </CardFooter>
     </Card>

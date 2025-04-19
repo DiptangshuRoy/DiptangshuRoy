@@ -13,6 +13,7 @@ import {
 import { Lens } from "@/components/magicui/lens";
 import Link from "next/link";
 import { Safari } from "@/components/magicui/safari";
+import { ChevronRightIcon } from "lucide-react";
 
 export function MDN() {
   return (
@@ -34,12 +35,13 @@ export function MDN() {
       <CardContent>
         <CardTitle className="text-2xl">MDN_Web Docs</CardTitle>
         <CardDescription>
-          Popular React framework for building server-side rendered (SSR) and static web applications.
+          The go-to resource for web developers, offering in-depth documentation on HTML, CSS, JavaScript, and more — straight from Mozilla.
         </CardDescription>
       </CardContent>
       <CardFooter className="space-x-4">
-        <Link href="https://developer.mozilla.org/en-US/" target="_blank" className="rounded-lg bg-orange-500">
-          <Button>Let&apos;s go</Button>
+        <Link href="https://developer.mozilla.org/en-US/" target="_blank" className="rounded-lg">
+        <Button className="group">Let&apos;s go<ChevronRightIcon className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
+        </Button>
         </Link>
       </CardFooter>
     </Card>
