@@ -34,7 +34,7 @@ export function Npm() {
       <CardContent>
         <CardTitle className="text-2xl">NPM</CardTitle>
         <CardDescription>
-          Popular React framework for building server-side rendered and static web applications.
+          sfsfasfsfasf
         </CardDescription>
       </CardContent>
       <CardFooter className="space-x-4">
