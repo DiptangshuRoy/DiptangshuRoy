@@ -36,14 +36,16 @@ export default function Page() {
   //   .slice(0, 3);
 
   return (
-    <main className="relative overflow-hidden">
-      <Particles
-        className="absolute inset-0 -z-10"
-        quantity={150}
-        ease={80}
-        color={color}
-        refresh
-      />
+    <main className="relative">
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <Particles
+          className="h-full w-full"
+          quantity={150}
+          ease={80}
+          color={color}
+          refresh
+        />
+      </div>
 
       {/* About */}
       <section id="about" className="container py-24 lg:py-40">
