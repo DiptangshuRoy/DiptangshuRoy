@@ -105,7 +105,10 @@ export function Lens({
         </div>
       </motion.div>
     );
-  }, [currentPosition, lensSize, lensColor, zoomFactor, children, duration]);
+  },[currentPosition, zoomFactor, children, duration, maskImage] // ADDED 'mskImage' FROM PNPM~BUILD WARNING
+  // BELOW IS THE DEFAULT DEPEDENCIES EXCEPT 'mskImage'
+  // },[currentPosition, lensSize, lensColor, zoomFactor, children, duration, maskImage] // ADDED 'mskImage' FROM PNPM~BUILD WARNING
+);
 
   return (
     <div
