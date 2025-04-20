@@ -178,7 +178,7 @@ export default function ContactFormModal() {
             />
             <Mail
               className={`absolute left-3 transform -translate-y-1/2 text-muted-foreground ${
-                errors.email ? "top-[100px]" : "top-20"}`}
+                errors.name ? "top-[99.5px]" : "top-20"}`}
               size={18}
             />
             {errors.email && (
