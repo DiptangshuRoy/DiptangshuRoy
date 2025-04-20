@@ -14,9 +14,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Diptangshu R | Portfolio",
   description:
-    "Discover Elhussary's front-end developer portfolio featuring innovative projects, modern web technologies, and a passion for clean, user-friendly design. Explore expertise in React, Next.js, Tailwind CSS, and more.",
+    "Discover Diptangshu's full-stack developer portfolio featuring innovative projects, modern web technologies, and a passion for clean, user-friendly design. Explore expertise in React, Next.js, Tailwind CSS, and more.",
   keywords: [
-    "Front-End Developer",
+    "Full-Stack Developer",
     "Web Developer",
     "React Developer",
     "Next.js Portfolio",
@@ -64,13 +64,14 @@ export default function RootLayout({
       <body className={cn("font-sans antialiased relative", inter.className)}>
         <ThemeProvider
           attribute="class"
-          // defaultTheme="dark"
+          defaultTheme="light"
           enableSystem
+          // enableSystem={false} // 👈 Light theme will be forced regardless of OS settings
           disableTransitionOnChange
         >
           <Navbar />
-          <ScrollProgress /> {/* Scroll Progress Bar */}
-          {children} {/* Main Page Content */}
+          <ScrollProgress />
+          {children}
           <Footer />
           <ContactFormModal />
           <Toaster />

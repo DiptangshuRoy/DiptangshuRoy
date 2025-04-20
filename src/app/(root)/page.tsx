@@ -36,7 +36,7 @@ export default function Page() {
   //   .slice(0, 3);
 
   return (
-    <main>
+    <main className="relative overflow-hidden">
       <Particles
         className="absolute inset-0 -z-10"
         quantity={150}
@@ -171,7 +171,6 @@ export default function Page() {
       {/* Recent Blog */}
       <section className="container py-12 md:py-24">
         <h2 className="mb-12">
-          {/* Have idea about project? */}
           <SparklesText className="text-3xl font-bold tracking-tighter sm:text-4xl ">
             Have idea about project?
           </SparklesText>

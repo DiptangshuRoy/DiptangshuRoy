@@ -111,7 +111,7 @@ export default function ProjectCard() {
               className="rounded-3xl"
             ></video> */}
             <Link className="relative" href={project.link} target="_blank" rel="noopener noreferrer">
-              <div className="absolute bottom-[16.5px] left-1/2 -translate-x-1/2 w-[96%] h-4 bg-black opacity-30 blur-md "></div>
+              <div className="absolute bottom-[16.5px] left-1/2 -translate-x-1/2 w-[96%] h-4 bg-black opacity-30 blur-md"></div>
               <Image src={project.short} height={800} width={800} alt="preview image" className="scale-110 hover:scale-115 transition cursor-pointer" />
             </Link>
           </section>
