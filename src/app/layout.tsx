@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Diptangshu Roy | Fullstack Developer Portfolio",
     description:
-      "Explore Diptangshu's cutting-edge front-end development projects, utilizing modern frameworks like React, Next.js, and Tailwind CSS.",
+      "Explore Diptangshu's cutting-edge full-stack development projects, utilizing modern frameworks like React, Next.js, and Tailwind CSS.",
     url: "https://diptangshu-portfolio-2.vercel.app/",
     siteName: "Diptangshu Portfolio",
     type: "website",
