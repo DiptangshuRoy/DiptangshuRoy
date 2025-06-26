@@ -8,7 +8,7 @@
 
 ###
 
-<img align="right" height="160" src="https://media.tenor.com/i3lImBg2UEQAAAAM/scaler-create-impact.gif"  />
+<img align="right" height="140" src="https://media.tenor.com/i3lImBg2UEQAAAAM/scaler-create-impact.gif"  />
 
 ###
 
