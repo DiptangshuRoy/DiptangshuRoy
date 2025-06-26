@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Diptangshu R | Portfolio",
   description:
-    "Discover Diptangshu's full-stack developer portfolio featuring innovative projects, modern web technologies, and a passion for clean, user-friendly design. Explore expertise in React, Next.js, Tailwind CSS, and more.",
+    "Explore Diptangshu's full-stack portfolio with innovative projects, modern web tech, and clean UI. Skilled in React, Next.js, Tailwind CSS, and more.",
   keywords: [
     "Full-Stack Developer",
     "Web Developer",
