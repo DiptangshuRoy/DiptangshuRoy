@@ -8,36 +8,36 @@
 
 ###
 
-<img align="right" height="150" src="https://media.tenor.com/i3lImBg2UEQAAAAM/scaler-create-impact.gif"  />
+<img align="right" height="160" src="https://media.tenor.com/i3lImBg2UEQAAAAM/scaler-create-impact.gif"  />
 
 ###
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=js" height="31" alt="javascript logo"  />
-  <img width="11" />
-  <img src="https://skillicons.dev/icons?i=ts" height="31" alt="typescript logo"  />
-  <img width="11" />
-  <img src="https://skillicons.dev/icons?i=react" height="31" alt="react logo"  />
-  <img width="11" />
-  <img src="https://skillicons.dev/icons?i=redux" height="31" alt="redux logo"  />
-  <img width="11" />
-  <img src="https://skillicons.dev/icons?i=nextjs" height="31" alt="nextjs logo"  />
-  <img width="11" />
-  <img src="https://skillicons.dev/icons?i=mongodb" height="31" alt="mongodb logo"  />
-  <img width="11" />
-  <img src="https://skillicons.dev/icons?i=express" height="31" alt="express logo"  />
-  <img width="11" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="31" alt="nodejs logo"  />
-  <img width="11" />
-  <img src="https://skillicons.dev/icons?i=py" height="31" alt="python logo"  />
-  <img width="11" />
-  <img src="https://skillicons.dev/icons?i=tailwind" height="31" alt="tailwindcss logo"  />
-  <img width="11" />
-  <img src="https://skillicons.dev/icons?i=webpack" height="31" alt="webpack logo"  />
-  <img width="11" />
-  <img src="https://img.shields.io/badge/Socket.io-010101?logo=socketdotio&logoColor=white&style=for-the-badge" height="31" alt="socketio logo"  />
-  <img width="11" />
-  <img src="https://img.shields.io/badge/MUI-007FFF?logo=mui&logoColor=white&style=for-the-badge" height="31" alt="materialui logo"  />
+  <img src="https://skillicons.dev/icons?i=js" height="30" alt="javascript logo"  />
+  <img width="10" />
+  <img src="https://skillicons.dev/icons?i=ts" height="30" alt="typescript logo"  />
+  <img width="10" />
+  <img src="https://skillicons.dev/icons?i=react" height="30" alt="react logo"  />
+  <img width="10" />
+  <img src="https://skillicons.dev/icons?i=redux" height="30" alt="redux logo"  />
+  <img width="10" />
+  <img src="https://skillicons.dev/icons?i=nextjs" height="30" alt="nextjs logo"  />
+  <img width="10" />
+  <img src="https://skillicons.dev/icons?i=mongodb" height="30" alt="mongodb logo"  />
+  <img width="10" />
+  <img src="https://skillicons.dev/icons?i=express" height="30" alt="express logo"  />
+  <img width="10" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="30" alt="nodejs logo"  />
+  <img width="10" />
+  <img src="https://skillicons.dev/icons?i=py" height="30" alt="python logo"  />
+  <img width="10" />
+  <img src="https://skillicons.dev/icons?i=tailwind" height="30" alt="tailwindcss logo"  />
+  <img width="10" />
+  <img src="https://skillicons.dev/icons?i=webpack" height="30" alt="webpack logo"  />
+  <img width="10" />
+  <img src="https://img.shields.io/badge/Socket.io-010101?logo=socketdotio&logoColor=white&style=for-the-badge" height="30" alt="socketio logo"  />
+  <img width="10" />
+  <img src="https://img.shields.io/badge/MUI-007FFF?logo=mui&logoColor=white&style=for-the-badge" height="30" alt="materialui logo"  />
 </div>
 
 ###
