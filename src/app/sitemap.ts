@@ -15,6 +15,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     {
       url: "blog",
     },
+
+    {
+      url: "techresources",
+    },
   ];
   return [
     {
